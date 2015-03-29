@@ -1,0 +1,19 @@
+#!/bin/bash
+
+FILE_NAME_FOR_ARGS=arguments_for_script
+ARGS_FILE=~/Documents/git-repos/remote-github/website/upload_script/$FILE_NAME_FOR_ARGS
+SOURCE_FILES=~/Documents/git-repos/remote-github/website/source_files
+
+if [ -e "$ARGS_FILE" ]
+then
+# This is a file with three arguments that will be filled into the script below.
+readarray ARGUMENTS < $ARGS_FILE
+
+USER_ARG=${ARGUMENTS[0]}
+PASS_ARG=${ARGUMENTS[1]}
+HOST_ARG=${ARGUMENTS[2]}
+
+  ncftpput -u $USER_ARG -p $PASS_ARG $HOST_ARG /public_html $SOURCE_FILES/testfilelol
+else
+  echo "Error, file $FILE_NAME_FOR_ARGS does not exist"
+fi
