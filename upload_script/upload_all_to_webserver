@@ -13,7 +13,7 @@ USER_ARG=${ARGUMENTS[0]}
 PASS_ARG=${ARGUMENTS[1]}
 HOST_ARG=${ARGUMENTS[2]}
 
-  ncftpput -u $USER_ARG -p $PASS_ARG $HOST_ARG /public_html $SOURCE_FILES/testfilelol
+  ncftpput -u $USER_ARG -p $PASS_ARG $HOST_ARG /public_html $SOURCE_FILES/*
 else
   echo "Error, file $FILE_NAME_FOR_ARGS does not exist"
 fi
