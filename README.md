@@ -1,4 +1,4 @@
-#Website
+# Website
 
 This repository contains the source files used for my website
 [stmhall.ca](http://www.stmhall.ca).
@@ -18,7 +18,7 @@ that order (see template).
 This script will also install a program called ncftp which is what it uses to
 transfer files via ftp.
 
-###My Resume
+### My Resume
 
 My resume is built using LaTeX. I have more details about how it was created on
 my [dotfiles](http://github.com/hallzy/dotfiles) page.
