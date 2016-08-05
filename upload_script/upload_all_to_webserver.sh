@@ -21,8 +21,7 @@ SOURCE_FILES=~/Documents/git-repos/remote-github/website/source_files
 
 # If the arguments file exists then read the file and get the arguments, and
 # insert them into the ncftpput command
-if [ -e "$ARGS_FILE" ]
-then
+if [ -e "$ARGS_FILE" ]; then
   # This is a file with three arguments that will be filled into the script below.
   readarray ARGUMENTS < $ARGS_FILE
 
@@ -33,12 +32,17 @@ then
   #server hostname
   HOST_ARG=${ARGUMENTS[2]}
 
-  echo "Installing/ Updating ncftp program..."
-  echo "====================================="
-  sudo apt-get install ncftp
+  command -v ncftp >/dev/null 2>&1 || {
+    echo "ncftp is not installed and is required to execute this script. You"
+    echo "can install it with \"sudo apt-get install ncftp\"."
+    exit 1
+  }
+
+
   echo "Now Copying files to webserver..."
   echo "================================="
   ncftpput -u $USER_ARG -p $PASS_ARG $HOST_ARG /public_html $SOURCE_FILES/*
 else
-  echo "Error, file $FILE_NAME_FOR_ARGS does not exist"
+  echo "Error, file $ARGS_FILE does not exist"
+  exit 1;
 fi
