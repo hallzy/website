@@ -15,6 +15,13 @@ Inside of the arguments file should be your server username, the login password
 for the server, and the hostname of the server on each of their own lines in
 that order (see template).
 
+The password is optional. If you leave the password line blank for the linux
+bash script, ftp will ask you for a password. For the Windows Batch script it
+does not work this way, so the script allows you to just enter two lines of
+information, and if you do it assumes the first line is the username, and the
+second is the host, then the script will prompt you for the password (which will
+be visible as you type it).
+
 #### Windows
 
 The same applies for windows. The arguments file just needs to be created and

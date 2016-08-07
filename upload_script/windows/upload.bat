@@ -8,10 +8,21 @@ for /f %%x in (arguments_for_script.txt) do (
   set /a Counter+=1
 )
 
-REM Generated the ftp_script.txt file. This is executed by the ftp command later
+set username=%Line_1%
+set passwd=%Line_2%
+set host=%Line_3%
+
+REM Ask for Password if one is not given in the file
+if %Counter% LEQ 3 (
+  set /p passwd="FTP Password: "
+  if not defined passwd goto :eof
+  set host=%Line_2%
+)
+
+
 echo user> ftp_script.txt
-echo %Line_1%>> ftp_script.txt
-echo %Line_2%>> ftp_script.txt
+echo %username%>> ftp_script.txt
+echo %passwd%>> ftp_script.txt
 echo cd /public_html>> ftp_script.txt
 REM Turn off interactive mode for mput
 echo prompt n>> ftp_script.txt
@@ -21,6 +32,6 @@ echo quit>> ftp_script.txt
 
 REM Run the ftp_script with the ftp command on the host defined by the third
 REM line of the arguments file.
-ftp -n -s:ftp_script.txt %Line_3%
+ftp -n -s:ftp_script.txt %host%
 
 pause
