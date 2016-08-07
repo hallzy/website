@@ -18,6 +18,12 @@ that order (see template).
 This script will also install a program called ncftp which is what it uses to
 transfer files via ftp.
 
+
+#### Windows
+
+The same applies for windows. The arguments file just needs to be created and
+populated. Then run the upload.bat script.
+
 ### My Resume
 
 My resume is built using LaTeX. I have more details about how it was created on

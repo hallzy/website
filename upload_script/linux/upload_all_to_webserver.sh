@@ -15,7 +15,7 @@
 #Name of the file that contains the necessary information.
 FILE_NAME_FOR_ARGS=arguments_for_script
 #This is the path to the file with the arguments
-ARGS_FILE=~/Documents/git-repos/remote-github/website/upload_script/$FILE_NAME_FOR_ARGS
+ARGS_FILE=~/Documents/git-repos/remote-github/website/upload_script/linux/$FILE_NAME_FOR_ARGS
 #This is the folder that contains the website source files
 SOURCE_FILES=~/Documents/git-repos/remote-github/website/source_files
 
