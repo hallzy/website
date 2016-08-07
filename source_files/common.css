@@ -1,0 +1,92 @@
+/* Navigation hyperlinks at the top */
+.nav a {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+/* How to display the hyperlinks at the top */
+.nav li {
+  display: inline;
+}
+
+/* The main picture in the middle */
+.jumbotron {
+  background-image: url('binary.jpg');
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Defines the position relative to the picture of where the text is */
+.jumbotron .container {
+  position: relative;
+  /* 30px from the top */
+  top: 30px;
+}
+
+/* My big name in the middle, and big headers under my name */
+.jumbotron h1 {
+  color: #fff;
+  font-size: 58px;
+  font-family: "Courier New", Courier, 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+/* The colour of the bottom of the page */
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+/* Hyperlinks in the bottom section of the page */
+.learn-more a {
+  color: #00b0ff;
+}
+
+/* The names of my references at the bottom of the page */
+.learn-more h4 {
+  font-family: 'Shift', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Headings at the bottom: "Contact information for Steven Hall" and
+"References" */
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* The text under my big name on the middle of the page */
+.jumbotron p {
+  font-size: 30px;
+  font-family: "Courier New", Courier, 'Shift', sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Middle section */
+.extraText {
+    background-color: #efefef;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+/* Headers of the middle text */
+.extraText h2 {
+    color: #393c3d;
+    font-size: 24px;
+}
+
+/* Regular text of the middle part */
+.extraText p {
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+/* Lists in the middle part */
+.extraText ul {
+  font-size: 15px;
+  margin-bottom: 35px;
+}
