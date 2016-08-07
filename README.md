@@ -15,10 +15,6 @@ Inside of the arguments file should be your server username, the login password
 for the server, and the hostname of the server on each of their own lines in
 that order (see template).
 
-This script will also install a program called ncftp which is what it uses to
-transfer files via ftp.
-
-
 #### Windows
 
 The same applies for windows. The arguments file just needs to be created and
