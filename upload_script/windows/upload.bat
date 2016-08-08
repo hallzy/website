@@ -20,7 +20,8 @@ if %Counter% LEQ 3 (
 )
 
 
-echo user> ftp_script.txt
+echo binary> ftp_script.txt
+echo user>> ftp_script.txt
 echo %username%>> ftp_script.txt
 echo %passwd%>> ftp_script.txt
 echo cd /public_html>> ftp_script.txt
