@@ -1,34 +1,8 @@
 <!DOCTYPE html>
 <html>
   <title>Projects - Steven Hall</title>
-  <head>
-    <link href="shift.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="common.css">
-
-  </head>
-
-  <body>
-    <div class="nav">
-      <div class="container">
-        <ul class="pull-left">
-          <li><a href="index.html">127.0.0.1 (Home)</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="Steven Hall Resume.pdf" target="_blank">Resume</a></li>
-            <li><a href="references.html">References</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="https://github.com/hallzy"
-                target="_blank">GitHub</a></li> <li><a
-                href="https://www.linkedin.com/in/steven-hall-7067a9111"
-                target="_blank">LinkedIn</a></li> <li><a
-                href="https://hallzy.github.io/GhResume/?hallzy"
-                target="_blank">GitHub Resume</a></li> <li><a
-                href="https://careers.stackoverflow.com/stmhall"
-                target="_blank">Stack Overflow</a></li>
-        </ul>
-      </div>
-    </div>
+  <?php require("header.html"); ?>
 
     <div class="jumbotron">
       <div class="container">
@@ -220,40 +194,7 @@
 
         </div>
     </div>
-    <div class="learn-more">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3>Contact Information For Steven Hall</h3>
-          <p>I can be reached by email at:</p>
-          <p><a href="mailto:steven@stmhall.ca">steven@stmhall.ca</a></p>
-        </div>
-        <div class="col-md-4">
-          <h3>References</h3>
-          <h4>Malkinder Johal</h4>
-          <p>I assisted Malkinder Johal in setting up an online assessment
-          environment for his classes (he is a high school teacher).</p> <p>For
-          more information about how I know Malkinder Johal, visit the
-          references page:</p>
-          <p><a href="references.html">References</a></p>
-          <p><em>Work Contact Information:</em><br><a
-            href="mailto:mjohal@deltasd.bc.ca">mjohal@deltasd.bc.ca</a><br><a
-            href="tel:604-594-5491">(604) 594-5491</a></p>
-        </div>
-        <div class="col-md-4">
-          <h3>&nbsp;</h3>
-          <h4>Arnold Fernandes</h4>
-          <p>Arnold Fernandes is my most recent employer. I worked for him at
-          ByteCom, a computer repair shop.</p>
-          <p>For more information about how I know Arnold Fernandes, visit the
-          references page:</p>
-          <p><a href="references.html">References</a></p>
-          <p><em>Work Contact Information:</em><br><a
-            href="mailto:arnold@bytecom.ca">arnold@bytecom.ca</a><br><a
-            href="tel:604-597-3158">(604) 597-3158</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </body>
+
+  <?php require("footer.html"); ?>
+
 </html>
