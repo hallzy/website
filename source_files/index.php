@@ -17,7 +17,7 @@
             <ul>
               <li>APEGBC Member Advantage Program for Students</li>
             </ul>
-            <h2><a href="projects.html" target="_blank">Projects</a></h2>
+            <h2><a href="projects.php" target="_blank">Projects</a></h2>
             <ul>
               <li>Electromagnetically Tethered Robot</li>
               <li>Dining Philosophers Problem (Multithreading)</li>
