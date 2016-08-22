@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <title>Projects - Steven Hall</title>
+  <title>References - Steven Hall</title>
 
   <?php require("header.html"); ?>
 
