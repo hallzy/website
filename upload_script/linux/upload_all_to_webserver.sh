@@ -43,9 +43,12 @@ if [ -e "$ARGS_FILE" ]; then
   echo "================================="
 ftp -nvi $HOST_ARG << EOT
 user ${USER_ARG} ${PASS_ARG}
-cd /public_html
+cd /public_html/..
 lcd ../../source_files
+mput arguments_for_script
+cd /public_html
 mput *
+delete arguments_for_script
 ls
 quit
 EOT

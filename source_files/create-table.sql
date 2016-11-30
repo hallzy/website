@@ -1,0 +1,1 @@
+../../pickapart-master-list/create-table-stmhall.sql
