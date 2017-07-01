@@ -48,6 +48,7 @@ lcd ../../source_files
 mput arguments_for_script
 cd /public_html
 mput *
+mput .htaccess
 delete arguments_for_script
 ls
 quit
