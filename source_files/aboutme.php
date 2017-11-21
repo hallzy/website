@@ -38,8 +38,8 @@
                     University (KPU) - (September 2012 - April 2013)
               </li>
             </ul>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have completed two years of
-               university, and I am currently enrolled in my third year. I
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am currently enrolled in my last
+               term of classes. I
                finished my first year at Kwantlen Polytechnic University where I
                attended both the Surrey and Richmond campuses in British
                Columbia and received my Engineering Certificate. I have been a
@@ -51,16 +51,16 @@
 
             <h2>Technical Skills</h2>
             <ul>
-              <li>Programming languages that I have used include: C, C++, C#,
-                  Objective-C, Java, JavaScript, Assembly (68k and 8052),
-                  Python, HTML, and CSS
+              <li>Programming languages that I have used include: C, C++,
+                  JavaScript, Assembly (68k and 8052), Python, HTML, and CSS
               </li>
               <li>Operating systems that I am comfortable with are Microsoft
                   Windows, Mac OS X, and various Linux distributions including
                   Ubuntu, and Elementary OS.
               </li>
               <li>I have used three different types of version control. They are
-                  Git (git), Subversion (svn), and Mercurial (hg).
+                  Git (git), Subversion (svn), and Mercurial (hg), but I use Git
+                  on a regular basis and am very comfortable with it.
               </li>
             </ul>
 

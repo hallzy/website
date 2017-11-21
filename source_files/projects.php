@@ -21,14 +21,11 @@
           <ol>
               <li>Electromagnetically Tethered Robot - <a
                   href="https://github.com/hallzy/autonomous-robot"
-                  target="_blank">C Code</a></li> <li>Dining Philosophers
-                Problem (Multithreading) - <a
+                  target="_blank">C Code</a></li>
+              <li>Dining Philosophers Problem (Multithreading) - <a
                   href="https://github.com/hallzy/Dining-Philosopher"
-                  target="_blank">C Code</a></li> <li>Sleep Logger - <a
-                  href="https://github.com/hallzy/Sleep-Logger"
-                  target="_blank">C++ Code</a></li> <li>Projectile Motion iOS
-                App - <a href="https://github.com/hallzy/ios-projectile-motion"
-                  target="_blank">Objective-C Code</a></li> <li>Dotfiles - <a
+                  target="_blank">C Code</a></li>
+              <li>Dotfiles - <a
                   href="https://github.com/hallzy/dotfiles"
                   target="_blank">Repo</a></li>
           </ol>
@@ -127,65 +124,7 @@
           nap. This allows the opportunity for other philosophers to grab their
           forks to finish their meal.
           </p>
-
-          <h2>3. Sleep Logger </h2>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;This is a C++ console program that I wrote
-          for a family member who wanted to easily log at what times of the
-          night he woke up at. The code can be found
-          <a href="https://github.com/hallzy/Sleep-Logger"
-            target="_blank">here</a>.
-          When the program is first executed, it will ask for the current time
-          (I am looking into having the program find the time on its own now)
-          and from then on when you press the "enter" button, it will print a
-          message to the console saying that the time was logged. It will then
-          update a text file that saves the log.
-          <a href="sleep-log.txt" target="_blank">This is a link</a> to a sample
-          log file. It records the length of time that has passed since starting
-          the program and the actual corresponding clock time.
-          </p>
-
-          <h2>4. Projectile Motion iOS App</h2>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;This is an iOS App that I developed over
-          the summer of 2014. It is not, however, in the Apple AppStore, as I do
-          not, at this point in time, have a developer's licence. The code can
-          be found on my repository
-          <a href="https://github.com/hallzy/ios-projectile-motion"
-            target="_blank">here</a>.
-          This app takes four inputs: the force of gravity, the initial vertical
-          velocity of a projectile, the initial height of the projectile, and
-          the horizontal velocity of the projectile. The initial horizontal
-          distance is assumed to be at 0m.  When the "Solve" button is pressed
-          it solves for the four answers.
-          </p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;The time to hit the ground is the elapsed
-          time after the projectile is launched until the object hits the ground
-          and the "Distance to Ground" is the horizontal distance travelled
-          before it hits the ground. The "Time to Max Height" is the elapsed
-          time until the object reaches its maximum height and "Distance to Max"
-          is the horizontal distance travelled until it reaches its highest
-          point.
-          </p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;There are two screenshots below. One is
-          before any values are entered, and the other is after the values have
-          been entered, and the solve button has been pressed. For the force of
-          gravity, you can enter any value you want, but I have five preset
-          values to choose from. So you can easily find the trajectory of a
-          projectile assuming you are on Earth, the Moon, Mars, the Sun, or
-          Jupiter.
-          </p>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="thumbnail">
-                      <img src="ios-1.png">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail">
-                      <img src="ios-2.png">
-                    </div>
-                </div>
-            </div>
-          <h2>5. Dotfiles</h2>
+          <h2>3. Dotfiles</h2>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;This repo contains all of my scripts and
           configuration files from my home folder. It includes a vimrc and vim
           plugins. For more information please visit the repository

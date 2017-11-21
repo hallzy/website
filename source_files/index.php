@@ -21,9 +21,7 @@
             <ul>
               <li>Electromagnetically Tethered Robot</li>
               <li>Dining Philosophers Problem (Multithreading)</li>
-              <li>Sleep Logger</li>
-              <li>Projectile Motion iOS App</li>
-              <li>And More!</li>
+              <li>See Github for others</li>
             </ul>
             <h2>Interests</h2>
             <ul>
