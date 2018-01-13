@@ -7,7 +7,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Steven Hall</h1>
-        <p>4th Year Software Engineering Student at the University of British
+        <p>Software Engineering Graduate from the University of British
         Columbia</p>
       </div>
     </div>

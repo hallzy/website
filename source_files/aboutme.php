@@ -31,7 +31,7 @@
                 <em>Bachelor of Applied Science in Computer Engineering
                   (Software Option)</em>
                 - the University of British Columbia (UBC) - (September 2013
-                - Present)
+                - 2017)
               </li>
               <li>
                 <em>Engineering Certificate</em> - Kwantlen Polytechnic
