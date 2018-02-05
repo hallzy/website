@@ -31,7 +31,7 @@
           </ol>
           <h2>1. Electromagnetically Tethered Robot</h2>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;Programmed in C, the Autonomous Robot is
-          desgined to follow an electromagnetic signal produced by one solenoid
+          designed to follow an electromagnetic signal produced by one solenoid
           on the remote, and received by two solenoids that are on the robot
           itself. We used the voltage received by the robot to determine how
           far, or close, it is away from the controller. The code is in my
@@ -55,7 +55,7 @@
           that the robot should turn left so that the right solenoid and left
           solenoid receive a similar signal strength. In addition, there are
           several buttons on the remote that we can use in order to make the
-          robot do more interesting maneuvers. Each button sends a series of
+          robot do more interesting manoeuvres. Each button sends a series of
           binary bits using the magnetic field.
           </p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;Below is a video showing how the robot
@@ -65,7 +65,7 @@
           Another button makes the robot parallel park in a space that is 1.5
           times its length. Two of the other buttons make the robot get closer
           or further from the remote. We have one last button which does our
-          bonus maneuver. Our professor's name was "Jesus" so we decided we
+          bonus manoeuvre. Our professor's name was "Jesus" so we decided we
           would attach a marker to the back of the robot and have it draw out a
           cursive "J" for him.
           </p>

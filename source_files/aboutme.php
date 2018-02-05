@@ -59,7 +59,7 @@
                   Ubuntu, and Elementary OS.
               </li>
               <li>I have used three different types of version control. They are
-                  Git (git), Subversion (svn), and Mercurial (hg), but I use Git
+                  Git (git), Subversion (SVN), and Mercurial (Hg), but I use Git
                   on a regular basis and am very comfortable with it.
               </li>
             </ul>
