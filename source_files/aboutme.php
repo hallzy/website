@@ -1,9 +1,15 @@
+<?php
+  require_once("header_footer.php");
+?>
 <!DOCTYPE html>
-<html>
-  <title>About Me - Steven Hall</title>
-
-  <?php require("header.html"); ?>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>About Me - Steven Hall</title>
+    <?= dumpHead(); ?>
+  </head>
+  <body>
+    <?= dumpHeaderBody(); ?>
     <div class="jumbotron">
       <div class="container">
         <h1>Steven Hall</h1>
@@ -15,6 +21,9 @@
         <div class="container">
             <h2>Technical Work Experience</h2>
             <ul>
+              <li>
+                LinuxMagic Inc. (April 2018 - Present) - Junior PHP Developer
+              </li>
               <li>Ericsson Canada Inc. (January 2015 - August 2015) -
               Software Developer Intern.</li>
               <ul>
@@ -31,7 +40,7 @@
                 <em>Bachelor of Applied Science in Computer Engineering
                   (Software Option)</em>
                 - the University of British Columbia (UBC) - (September 2013
-                - 2017)
+                - December 2017)
               </li>
               <li>
                 <em>Engineering Certificate</em> - Kwantlen Polytechnic
@@ -75,7 +84,6 @@
             </ul>
         </div>
     </div>
-
-  <?php require("footer.html"); ?>
-
+    <?= dumpFooterBody(); ?>
+  </body>
 </html>

@@ -1,9 +1,15 @@
+<?php
+  require_once("header_footer.php");
+?>
 <!DOCTYPE html>
-<html>
-  <title>References - Steven Hall</title>
-
-  <?php require("header.html"); ?>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>References - Steven Hall</title>
+    <?= dumpHead(); ?>
+  </head>
+  <body>
+    <?= dumpHeaderBody(); ?>
     <div class="jumbotron">
       <div class="container">
         <h1>Steven Hall</h1>
@@ -25,7 +31,6 @@
             </p>
         </div>
     </div>
-
-  <?php require("footer.html"); ?>
-
+    <?= dumpFooterBody(); ?>
+  </body>
 </html>
