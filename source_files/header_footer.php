@@ -10,7 +10,12 @@ function dumpHead() {
 }
 
 // Dump the navigation bar at the top of each page
-function dumpHeaderBody() {
+function dumpHeaderBody($callerFile) {
+  if (!isset($callerFile)) {
+    echo "Error dumping Header\n";
+    return;
+  }
+
   $linkedInURL     = "https://www.linkedin.com/in/steven-hall-7067a9111";
   $githubResumeURL = "https://hallzy.github.io/GhResume/?hallzy";
   $githubURL       = "https://github.com/hallzy";
@@ -37,6 +42,11 @@ function dumpHeaderBody() {
   $html .= "        <ul class='pull-left'>\n";
 
   foreach($navigationBarArr as $string => $link) {
+    // If the calling file is the one we are currently dumping, then add the
+    // id 'active'
+    if ($callerFile === $link) {
+      $link .= "' id='active";
+    }
     $html .= "          <li><a href='" . $link . "'>" . $string . "</a></li>\n";
   }
 

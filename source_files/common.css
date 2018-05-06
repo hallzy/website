@@ -2,7 +2,7 @@
 .nav a {
   font-size: 11px;
   font-weight: bold;
-  padding: 14px 10px;
+  padding: 5px 5px;
   text-transform: uppercase;
 }
 
@@ -89,4 +89,10 @@
 .extraText ul {
   font-size: 15px;
   margin-bottom: 35px;
+}
+
+/* ID assigned to the current active page in the navigation bar */
+#active {
+  border-style: double;
+  font-size: 13px;
 }

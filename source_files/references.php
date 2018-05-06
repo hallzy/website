@@ -9,7 +9,7 @@
     <?= dumpHead(); ?>
   </head>
   <body>
-    <?= dumpHeaderBody(); ?>
+    <?= dumpHeaderBody(basename(__FILE__)); ?>
     <div class="jumbotron">
       <div class="container">
         <h1>Steven Hall</h1>
