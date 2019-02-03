@@ -1,5 +1,35 @@
 <?php
-  require_once("header_footer.php");
+// We are trying to upload the resume
+if (isset($_POST['upload_resume_key'])) {
+  // Curl request to upload resume
+  // curl -X POST -F 'upload_resume_key=<KEY>' -F 'file=@<path to pdf>'
+  // https://stmhall.ca
+
+  // If we are trying to upload resume and the key is correct then attempt
+  $expectedKey = file_get_contents('/home/stmhallc/upload_key.txt');
+
+  if ($expectedKey === FALSE) {
+    echo "Upload Key not found on server\n";
+    die();
+  }
+
+  // If we are trying to upload resume but the key is wrong
+  if ($_POST['upload_resume_key'] !== $expectedKey) {
+    echo "Auth Failed\n";
+    die();
+  }
+
+  // Check if the POSTed key is the expected key
+  $target = '/home/stmhallc/public_html/Steven Hall Resume.pdf';
+  if (move_uploaded_file($_FILES['file']['tmp_name'], $target)) {
+    echo "Successfully Uploaded Resume\n";
+  } else {
+    echo "Failed to upload resume\n";
+  }
+  die();
+}
+
+require_once("header_footer.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
