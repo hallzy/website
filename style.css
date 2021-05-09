@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+:root {
+    font-family: 'Source Sans Pro';
+    font-weight: lighter;
+    font-size: 9pt;
+    width: 8.5in;
+    margin: auto;
+    background-color: #6b6b6b;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+a {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+img {
+    max-height: 1.5em;
+    margin-right: 0.5ch;
+}
+.contact li {
+    line-height: 1.8em;
+}
+
+.heavy {
+    font-weight: bold;
+}
+
+.header {
+    background-color: #444444;
+    color: white;
+    font-size: 4.5em;
+    padding: 0.75em;
+    text-align: center;
+}
+
+.header .lastName {
+    font-weight: normal;
+}
+
+.header .position {
+    font-size: 0.35em;
+}
+
+.content {
+    margin-top: 2em;
+    display: grid;
+    grid-template-areas:
+        'sidebar            work-section       work-section       work-section'
+        'projects-section   projects-section   projects-section   projects-section'
+        'education-section  education-section  education-section  education-section'
+        'interests-section  interests-section  interests-section  interests-section'
+    ;
+    grid-gap: 0ch 7ch;
+    grid-auto-columns: 1fr;
+    padding: 0px 5ch;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+.sidebar .title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.sidebar ul {
+    padding-left: 1ch;
+    margin-top: 0.25em;
+}
+.sidebar li {
+    list-style-type: none;
+}
+
+.section.work {
+    grid-area: work-section;
+}
+
+.section.projects {
+    grid-area: projects-section;
+}
+
+.section.education {
+    grid-area: education-section;
+}
+
+.section.interests {
+    grid-area: interests-section;
+}
+
+.section .heading {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.section.work .colour {
+    color: #00A8C0;
+}
+.section.projects .colour {
+    color: #E51760;
+}
+.section.education .colour {
+    color: #E6942E;
+}
+.section.interests .colour {
+    color: #9EBD3A;
+}
+
+.section .entry {
+    display: grid;
+    grid-template-areas:
+        'title title timePeriod'
+        'description description description';
+    margin-bottom: 1.5em;
+}
+.section .title {
+    grid-area: title;
+    font-size: 1.1em;
+}
+.section .timePeriod {
+    grid-area: timePeriod;
+    text-align: right;
+    color: #888888;
+    font-style: italic;
+}
+.section .description {
+    grid-area: description;
+}
+.section .description ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.section .entry .title .heavy {
+    margin-right: 2ch;
+}
+
+@media print {
+    :root {
+        background-color: white;
+    }
+
+    body {
+        box-shadow: none;
+    }
+
+    a {
+        color: black;
+        font-weight: lighter;
+    }
+
+    @page {
+        size: letter;
+        margin-left: 0cm;
+        margin-right: 0cm;
+
+        @bottom-center {
+            content: "Steven Hall's Resume";
+        }
+
+        @bottom-right {
+            content: counter(page);
+        }
+    }
+
+    @page:first {
+        margin-top: 0px;
+    }
+}

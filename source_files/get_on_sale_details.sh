@@ -1,1 +1,0 @@
-../../pickapart-master-list/get_on_sale_details.sh

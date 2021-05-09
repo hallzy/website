@@ -1,0 +1,250 @@
+{
+    "pageTitle": "Steven Hall's Resume",
+    "firstName": "Steven",
+    "lastName": "Hall",
+    "position": "Software Engineer",
+    "contactInfo": [
+        {
+            "href": "mailto:steven@stmhall.ca",
+            "imgSrc": "imgs/email.png",
+            "text": "steven@stmhall.ca"
+        },
+        {
+            "href": "https://github.com/hallzy",
+            "imgSrc": "imgs/github.png",
+            "text": "GitHub: hallzy"
+        },
+        {
+            "href": "https://www.linkedin.com/in/steventmhall",
+            "imgSrc": "imgs/linkedin.ico",
+            "text": "LinkedIn: steventmhall"
+        }
+    ],
+    "languages": [
+        "Bash Script",
+        "C/ C++",
+        "HTML/ CSS",
+        "Java",
+        "JavaScript/ AJAX/ JQuery",
+        "TypeScript",
+        "MySQL/ PostgreSQL",
+        "PHP",
+        "Python",
+        "VimScript"
+    ],
+    "programs": [
+        "Git/ SVN",
+        "Linux (CLI proficient)",
+        "Vim"
+    ],
+    "sections": {
+        "work": {
+            "title": "Work Experience",
+            "entries": [
+                {
+                    "imgSrc": "imgs/stnvideo.png",
+                    "boldTitle": "STN Video Inc.",
+                    "normalTitle": "Full Stack Web Developer",
+                    "timePeriod": "Oct 2020 - Present",
+                    "description": [
+                        "Working on Development of our video player with SmartMatch"
+                    ],
+                    "skills": [
+                        "PHP",
+                        "JavaScript"
+                    ]
+                },
+                {
+                    "imgSrc": "imgs/linuxmagic.png",
+                    "boldTitle": "LinuxMagic Inc.",
+                    "normalTitle": "Full Stack Web Developer",
+                    "timePeriod": "April 2018 - May 2020",
+                    "description": [
+                        "Worked on feature enhancements, customer requests, and bug fixes for MagicMail, a carrier grade email platform for ISPs and Telcos using a proprietary PHP MVC, PostgeSQL, Bootstrap, and JQuery.",
+                        "Worked on feature enhancements and bug fixes for other systems including the  CRM, sales system, and other product websites (MagicSpam, SpamRats) using CakePHP, MySQL and PostgreSQL, JQuery, Bootstrap, and a proprietary PHP MVC.",
+                        "Migrated the sales system database from an Oracle to PostgreSQL.",
+                        "Led a project to redesign and rewrite the SpamRATS product website from the ground up using a proprietary PHP MVC, Bootstrap, JQuery, and PostgreSQL.",
+                        "Completed work orders for customers by communicating directly with the customer and performing their development work in a timely and professional manner using a proprietary PHP MVC, JQuery, and MySQL.",
+                        "Mentored new Web Developer hires."
+                    ],
+                    "skills": [
+                        "Proprietary PHP MVC Framework",
+                        "CakePHP",
+                        "CSS",
+                        "JavaScript",
+                        "JQuery",
+                        "Bootstrap",
+                        "MySQL",
+                        "PostgreSQL",
+                        "Bash",
+                        "SVN"
+                    ]
+                },
+                {
+                    "imgSrc": "imgs/ubc.ico",
+                    "boldTitle": "UBC",
+                    "normalTitle": "Big Data Research Assistant",
+                    "timePeriod": "May 2016 - Aug 2016",
+                    "description": [
+                        "Goal: To share memory (RDDs) across Apache Spark instances through a unified memory manager."
+                    ],
+                    "skills": [
+                        "Scala",
+                        "Python",
+                        "Hadoop",
+                        "Apache Spark",
+                        "Git",
+                        "Bash"
+                    ]
+                },
+                {
+                    "imgSrc": "imgs/ericsson.ico",
+                    "boldTitle": "Ericsson Canada Inc.",
+                    "normalTitle": "Software Developer Intern",
+                    "timePeriod": "Jan 2015 - Aug 2015",
+                    "description": [
+                        "Tested and developed QoS and PBR software solutions on a variety of Ericsson's enterprise scale routing platforms using manual router configurations and Perl scripts for testing.",
+                        "Presented demos showing the functionality and progress of policy-based routing during the testing and development phases."
+                    ],
+                    "skills": [
+                        "C",
+                        "Perl",
+                        "Git",
+                        "CVS",
+                        "Bash"
+                    ]
+                }
+            ]
+        },
+        "projects": {
+            "title": "Technical Projects",
+            "entries": [
+                {
+                    "imgSrc": "",
+                    "boldTitle": "NES Tetris Web Clone",
+                    "normalTitle": "",
+                    "timePeriod": "Aug 2020",
+                    "description": [
+                        "Goal: To make a web based Tetris game that mimics the behaviour and rules of the classic NES Tetris game as closely as possible, with the ability to send a unique URL to a friend so that they are able to play the same sequence of pieces so you can compare your scores. The scores would be listed on the page for that game.",
+                        "Currently the game is in development. The game itself is playable but there are some bugs and issues I plan to address, and scores for the game are not saved or listed on the page. I plan to solve this by saving scores to a database, and using PHP to generate the game page with the scores listed."
+                    ],
+                    "skills": [
+                        "TypeScript",
+                        "PHP",
+                        "PostgreSQL",
+                        "HTML",
+                        "CSS"
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "boldTitle": "TV Show Notification and Calendar",
+                    "normalTitle": "",
+                    "timePeriod": "May 2020",
+                    "description": [
+                        "Created a Google App Script that retrieves air dates for episodes of TV Shows that I watch. The script uses that information to figure out what episodes I don't have in my Google Calendar already and will automatically add them for me."
+                    ],
+                    "skills": [
+                        "Google App Script",
+                        "TypeScript"
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "boldTitle": "Online Web Store",
+                    "normalTitle": "",
+                    "timePeriod": "Nov 2017",
+                    "description": [
+                        "Built a web application that mimics an online store using AJAX requests and MongoDB.",
+                        "Resulted in a functioning webpage that received a high grade."
+                    ],
+                    "skills": [
+                        "JavaScript",
+                        "HTML",
+                        "CSS",
+                        "MongoDB"
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "boldTitle": "Electromagnetically Tethered Robot",
+                    "normalTitle": "",
+                    "timePeriod": "April 2014",
+                    "description": [
+                        "Programmed a custom built autonomous robot to follow an electromagnetic signal. I also programmed the custom built remote that created this EM signal.",
+                        "The remote could also send binary data through the magnetic field to tell the robot to perform certain manoeuvres such as spin 180 degrees, move back and forth, and parallel park.",
+                        "Resulted in a fully functioning robot and a high project grade."
+                    ],
+                    "skills": [
+                        "C (Embedded)"
+                    ]
+                }
+            ]
+        },
+        "education": {
+            "title": "Education",
+            "entries": [
+                {
+                    "imgSrc": "",
+                    "boldTitle": "University of British Columbia",
+                    "normalTitle": "",
+                    "timePeriod": "Sept 2013 - Dec 2017",
+                    "description": [
+                        "Bachelor of Applied Science (BASc) in Software Engineering"
+                    ],
+                    "skills": [
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "boldTitle": "Kwantlen Polytechnic University",
+                    "normalTitle": "",
+                    "timePeriod": "Sept 2012 - April 2013",
+                    "description": [
+                        "Engineering Certificate"
+                    ],
+                    "skills": [
+                    ]
+                }
+            ]
+        },
+        "interests": {
+            "title": "Interests & Activities",
+            "entries": [
+                {
+                    "imgSrc": "",
+                    "boldTitle": "",
+                    "normalTitle": "",
+                    "timePeriod": "",
+                    "description": [
+                        "Programming and computers",
+                        "I love to learn and figure out how things work",
+                        [
+                            "Contributing to open source projects such as:",
+                            "Gravity programming language",
+                            "Git Radar",
+                            "Various Vim plugins"
+                        ],
+                        [
+                            "Suckless Software - I use a lot of Suckless software on my personal computer including:",
+                            "DWM",
+                            "dmenu",
+                            "sent",
+                            "st",
+                            "sxiv"
+                        ],
+                        "Encryption",
+                        "Computer and information security",
+                        "Network security including router configuration and VPNs.",
+                        "Configuring my Vim text editor so that it now has over 175,000 lines of additional configuration code and plugins which increases my productivity when coding and editing text.",
+                        "I perform all of my own car repairs and maintenance including:",
+                        "Skiing, Snowboarding",
+                        "Baseball, Hockey, Lacrosse"
+                    ],
+                    "skills": [
+                    ]
+                }
+            ]
+        }
+    }
+}
