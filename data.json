@@ -47,11 +47,24 @@
                     "normalTitle": "Full Stack Web Developer",
                     "timePeriod": "Oct 2020 - Present",
                     "description": [
-                        "Working on Development of our video player with SmartMatch"
+                        "Working on various new features, enhancements, and bug fixes for the frontend of our Video Player using JavaScript, MobX, Google IMA SDK, webpack, and Video.js",
+                        "Writing and maintaining Player Tests using Selenium and Python",
+                        "Created a new Admin tool on our Dashboard to expose how the our player's AI ranks video matches for a publisher's article"
                     ],
                     "skills": [
+                        "JavaScript",
+                        "MobX",
+                        "MySQL",
+                        "Selenium",
+                        "Python",
+                        "Git",
+                        "Jira",
+                        "Laravel",
+                        "JQuery",
+                        "Bootstrap",
+                        "Eloquent",
                         "PHP",
-                        "JavaScript"
+                        "SASS"
                     ]
                 },
                 {
@@ -121,6 +134,42 @@
             "entries": [
                 {
                     "imgSrc": "",
+                    "boldTitle": "Youtube Playlist Search Chrome Extension",
+                    "normalTitle": "",
+                    "timePeriod": "April 2021",
+                    "description": [
+                        "Goal: Create an chrome extension that was able to search for videos in large playlists.",
+                        "There were already a few extensions that did this in the store, but none of them worked to my liking.",
+                        "My extension is able to search video titles by word instead of as an exact phrase.",
+                        "It has a searchable dropdown list of channel names you can also filter by.",
+                        "The videos show the thumbnail",
+                        "The channel and title search filters are persistent per playlist across devices",
+                        "Custom lazy loading that only loads 25 or so videos at a time in the view, while being able to search the whole playlist.",
+                        "Playlists that take longer than 1 second to load have the video metadata saved for faster retrieval the next time the extension is opened."
+                    ],
+                    "skills": [
+                        "JavaScript",
+                        "Youtube API",
+                        "CSS",
+                        "HTML"
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "boldTitle": "Go Git Radar",
+                    "normalTitle": "",
+                    "timePeriod": "Nov 2020",
+                    "description": [
+                        "The purpose of this project was to both revive the git-radar project, and learn golang.",
+                        "git-radar was a project to give a 'heads up display' for Git in your bash prompt. It no longer sees any active development and it was slow on larger git repositories so I wanted to recreate it in a language other than bash, add new features, and increase performance.",
+                        "I chose to work with Golang because it was of interest to me at the time, and it makes running concurrent code easy, which allowed me to increase performance by up to about a factor of 5 in certain situations"
+                    ],
+                    "skills": [
+                        "Golang"
+                    ]
+                },
+                {
+                    "imgSrc": "",
                     "boldTitle": "NES Tetris Web Clone",
                     "normalTitle": "",
                     "timePeriod": "Aug 2020",
@@ -147,22 +196,6 @@
                     "skills": [
                         "Google App Script",
                         "TypeScript"
-                    ]
-                },
-                {
-                    "imgSrc": "",
-                    "boldTitle": "Online Web Store",
-                    "normalTitle": "",
-                    "timePeriod": "Nov 2017",
-                    "description": [
-                        "Built a web application that mimics an online store using AJAX requests and MongoDB.",
-                        "Resulted in a functioning web page that received a high grade."
-                    ],
-                    "skills": [
-                        "JavaScript",
-                        "HTML",
-                        "CSS",
-                        "MongoDB"
                     ]
                 },
                 {
