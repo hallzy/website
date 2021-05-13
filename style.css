@@ -3,16 +3,15 @@
 :root {
     font-family: 'Source Sans Pro';
     font-weight: lighter;
-    font-size: 9pt;
-    width: 8.5in;
-    margin: auto;
+    font-size: 10pt;
     background-color: #6b6b6b;
 }
 
 body {
-    margin: 0;
+    margin: auto;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    width: 8.5in;
 }
 
 a {
@@ -61,13 +60,13 @@ img {
     margin-top: 2em;
     display: grid;
     grid-template-areas:
-        'sidebar            work-section       work-section       work-section'
-        'projects-section   projects-section   projects-section   projects-section'
-        'education-section  education-section  education-section  education-section'
-        'interests-section  interests-section  interests-section  interests-section'
+        'sidebar            work-section'
+        'projects-section   projects-section'
+        'education-section  education-section'
+        'interests-section  interests-section'
     ;
-    grid-gap: 0ch 7ch;
-    grid-auto-columns: 1fr;
+    grid-gap: 0ch 4ch;
+    grid-auto-columns: 1fr 4fr;
     padding: 0px 5ch;
 }
 
@@ -123,13 +122,17 @@ img {
 .section .entry {
     display: grid;
     grid-template-areas:
-        'title title timePeriod'
-        'description description description';
+        'title        title        timePeriod'
+        'description  description  description';
     margin-bottom: 1.5em;
 }
 .section .title {
     grid-area: title;
     font-size: 1.1em;
+}
+.section .title span:not(.heavy) {
+    font-size: 0.9em;
+    font-style: italic;
 }
 .section .timePeriod {
     grid-area: timePeriod;
@@ -145,7 +148,7 @@ img {
     margin-bottom: 0px;
 }
 .section .entry .title .heavy {
-    margin-right: 2ch;
+    margin-right: 1ch;
 }
 
 @media print {
@@ -156,6 +159,12 @@ img {
     body {
         box-shadow: none;
     }
+
+    /* This is a hack to get the page to break sanely. Chrome is stupid, and */
+    /* without this it will break right in the middle of a line of text. */
+    /* li.projects-0-1 { */
+    /*     margin-top: 41px; */
+    /* } */
 
     a {
         color: black;

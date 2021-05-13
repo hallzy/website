@@ -12,12 +12,12 @@
         {
             "href": "https://github.com/hallzy",
             "imgSrc": "imgs/github.png",
-            "text": "GitHub: hallzy"
+            "text": "hallzy"
         },
         {
             "href": "https://www.linkedin.com/in/steventmhall",
             "imgSrc": "imgs/linkedin.ico",
-            "text": "LinkedIn: steventmhall"
+            "text": "steventmhall"
         }
     ],
     "languages": [
@@ -47,8 +47,8 @@
                     "normalTitle": "Full Stack Web Developer",
                     "timePeriod": "Oct 2020 - Present",
                     "description": [
-                        "Working on various new features, enhancements, and bug fixes for the frontend of our Video Player using JavaScript, MobX, Google IMA SDK, webpack, and Video.js",
-                        "Writing and maintaining Player Tests using Selenium and Python",
+                        "Working on various new features, enhancements, and bug fixes for the frontend of our Video Player",
+                        "Writing and maintaining Player Tests",
                         "Created a new Admin tool on our Dashboard to expose how the our player's AI ranks video matches for a publisher's article"
                     ],
                     "skills": [
@@ -73,11 +73,10 @@
                     "normalTitle": "Full Stack Web Developer",
                     "timePeriod": "April 2018 - May 2020",
                     "description": [
-                        "Worked on feature enhancements, customer requests, and bug fixes for MagicMail, a carrier grade email platform for ISPs and Telcos using a proprietary PHP MVC, PostgeSQL, Bootstrap, and JQuery.",
-                        "Worked on feature enhancements and bug fixes for other systems including the  CRM, sales system, and other product websites (MagicSpam, SpamRats) using CakePHP, MySQL and PostgreSQL, JQuery, Bootstrap, and a proprietary PHP MVC.",
-                        "Migrated the sales system database from an Oracle to PostgreSQL.",
-                        "Led a project to redesign and rewrite the SpamRATS product website from the ground up using a proprietary PHP MVC, Bootstrap, JQuery, and PostgreSQL.",
-                        "Completed work orders for customers by communicating directly with the customer and performing their development work in a timely and professional manner using a proprietary PHP MVC, JQuery, and MySQL.",
+                        "Worked on feature enhancements, customer requests, and bug fixes for our carrier grade email platform (MagicMail), CRM, sales system, and product websites (MagicSpam, SpamRATS)",
+                        "Migrated the sales system from an Oracle database to PostgreSQL.",
+                        "Led a project to redesign and rewrite the SpamRATS product website from the ground up.",
+                        "Completed work orders for customers by communicating directly with the customer and performing their development work in a timely and professional manner.",
                         "Mentored new Web Developer hires."
                     ],
                     "skills": [
@@ -138,14 +137,11 @@
                     "normalTitle": "",
                     "timePeriod": "April 2021",
                     "description": [
-                        "Goal: Create an chrome extension that was able to search for videos in large playlists.",
-                        "There were already a few extensions that did this in the store, but none of them worked to my liking.",
-                        "My extension is able to search video titles by word instead of as an exact phrase.",
-                        "It has a searchable dropdown list of channel names you can also filter by.",
-                        "The videos show the thumbnail",
-                        "The channel and title search filters are persistent per playlist across devices",
-                        "Custom lazy loading that only loads 25 or so videos at a time in the view, while being able to search the whole playlist.",
-                        "Playlists that take longer than 1 second to load have the video metadata saved for faster retrieval the next time the extension is opened."
+                        "Goal: Create an chrome extension that is able to search for videos in large playlists by filtering channel names and video titles.",
+                        "Includes a custom built searchable dropdown list of channel names you can filter by.",
+                        "The search filters are persistent per playlist across your devices.",
+                        "Custom built lazy loading that loads 25 or so videos at a time in the view, while being able to search the whole playlist.",
+                        "Very large playlists have their video metadata saved for faster retrieval the next time the extension is opened."
                     ],
                     "skills": [
                         "JavaScript",
@@ -160,9 +156,8 @@
                     "normalTitle": "",
                     "timePeriod": "Nov 2020",
                     "description": [
-                        "The purpose of this project was to both revive the git-radar project, and learn golang.",
-                        "git-radar was a project to give a 'heads up display' for Git in your bash prompt. It no longer sees any active development and it was slow on larger git repositories so I wanted to recreate it in a language other than bash, add new features, and increase performance.",
-                        "I chose to work with Golang because it was of interest to me at the time, and it makes running concurrent code easy, which allowed me to increase performance by up to about a factor of 5 in certain situations"
+                        "This was inspired by another project called git-radar which gives you a 'heads up display' for Git in your bash prompt but it no longer being developed and it was slow on larger git repositories.",
+                        "Go Git Radar is my git-radar clone written in Golang which contains additional features at twice the speed (five times the speed in certain situations)."
                     ],
                     "skills": [
                         "Golang"
@@ -258,19 +253,11 @@
                             "Git Radar",
                             "Various Vim plugins"
                         ],
-                        [
-                            "Suckless Software - I use a lot of Suckless software on my personal computer including:",
-                            "DWM",
-                            "dmenu",
-                            "sent",
-                            "st",
-                            "sxiv"
-                        ],
+                        "Suckless Software such as DWM, dmenu, sent, st, and sxiv",
                         "Encryption",
                         "Computer and information security",
-                        "Network security including router configuration and VPNs.",
                         "Configuring my Vim text editor so that it now has over 175,000 lines of additional configuration code and plugins which increases my productivity when coding and editing text.",
-                        "I perform all of my own car repairs and maintenance including:",
+                        "I perform all of my own car repairs and maintenance",
                         "Skiing, Snowboarding",
                         "Baseball, Hockey, Lacrosse"
                     ],

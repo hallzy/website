@@ -3,15 +3,18 @@
 $jsonStr = file_get_contents("data.json");
 $data = json_decode($jsonStr);
 
-function lists2html(array $arr) : string {
+// $className is used as a hack for CSS selector so that I an force a page break
+// in a sensible place, because chrome thinks it is a good idea to break right
+// in the middle of a line of text.
+function lists2html($className, array $arr) : string {
     $html = '';
-    foreach($arr as $item) {
+    foreach($arr as $idx => $item) {
         if (is_array($item)) {
             $value = array_shift($item);
 
-            $innerHTML = lists2html($item);
+            $innerHTML = lists2html("$className-$idx", $item);
             $html .= "
-                <li>
+                <li class='${className}-$idx'>
                     $value
                     <ul>
                         $innerHTML
@@ -19,7 +22,7 @@ function lists2html(array $arr) : string {
                 </li>
             ";
         } else {
-            $html .= "<li>$item</li>";
+            $html .= "<li class='${className}-$idx'>$item</li>";
         }
     }
     return $html;
@@ -30,6 +33,7 @@ function lists2html(array $arr) : string {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title><?= $data->pageTitle ?></title>
     <link rel='stylesheet' href='./style.css'>
 </head>
@@ -70,7 +74,7 @@ function lists2html(array $arr) : string {
         <?php foreach($data->sections as $className => $section): ?>
             <div class='section <?= $className ?>'>
             <div class='heading'><span class='colour'><?= substr($section->title, 0, 3) ?></span><?= substr($section->title, 3) ?></div>
-            <?php foreach($section->entries as $entry): ?>
+            <?php foreach($section->entries as $idx => $entry): ?>
                 <div class='entry'>
                     <div class='title img-container'>
 
@@ -94,7 +98,7 @@ function lists2html(array $arr) : string {
 
                     <div class='description'>
                         <ul>
-                            <?= lists2html($entry->description) ?>
+                            <?= lists2html("$className-$idx", $entry->description) ?>
 
                         <?php if ($entry->skills): ?>
                             <li><strong>Skills:</strong> <?= implode(', ', $entry->skills) ?></li>
