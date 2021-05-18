@@ -3,6 +3,11 @@
 $jsonStr = file_get_contents("data.json");
 $data = json_decode($jsonStr);
 
+$mtime = filemtime('./style.css');
+if ($mtime === false) {
+    $mtime = 0;
+}
+
 // $className is used as a hack for CSS selector so that I an force a page break
 // in a sensible place, because chrome thinks it is a good idea to break right
 // in the middle of a line of text.
@@ -35,7 +40,7 @@ function lists2html($className, array $arr) : string {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title><?= $data->pageTitle ?></title>
-    <link rel='stylesheet' href='./style.css'>
+    <link rel='stylesheet' href='./style.css?v=<?= $mtime ?>'>
 </head>
     <body>
         <div class='header'>
