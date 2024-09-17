@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>stmhall.ca - 404</title>
+    <style>
+        body {
+            margin: auto;
+            width: 100%;
+            background: #313131;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            max-height: 75vh;
+        }
+
+        #msg {
+            transition: opacity 1.5s linear 1.5s;
+        }
+
+        #innerMsg {
+            transition: opacity 1.5s linear 3.5s;
+        }
+
+        #lyricsEl {
+            transition: opacity 0.2s linear 0s;
+        }
+
+        .noVisible {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>404 Not Found</h1>
+    <video id='rick' autoplay loop playsinline src="/rickroll.mp4"></video>
+    <h1 id='msg' class='noVisible'>Oh also... <span id='innerMsg' class='noVisible'>You've been Rickrolled!</span></h1>
+    <h1 id='lyricsEl' class='noVisible'></h1>
+    <script>
+        // Key is the end time of the lyric
+        const lyrics = [
+            {
+                start: 0,
+                end: 19.0,
+                lyric: "",
+            },
+            {
+                start: 19.2,
+                end: 22.5,
+                lyric: "We're no strangers to love",
+            },
+            {
+                start: 23.2,
+                end: 27.3,
+                lyric: "You know the rules and so do I",
+            },
+            {
+                start: 27.5,
+                end: 31.3,
+                lyric: "A full commitment's what I'm thinking of",
+            },
+            {
+                start: 31.5,
+                end: 35.2,
+                lyric: "You wouldn't get this from any other guy",
+            },
+            {
+                start: 35.6,
+                end: 40.2,
+                lyric: "I just wanna tell you how I'm feeling",
+            },
+            {
+                start: 40.8,
+                end: 43.3,
+                lyric: "Gotta make you understand",
+            },
+            {
+                start: 43.5,
+                end: 47.5,
+                lyric: "Never gonna give you up, Never gonna let you down",
+            },
+            {
+                start: 47.7,
+                end: 51.5,
+                lyric: "Never gonna run around and desert you",
+            },
+            {
+                start: 51.9,
+                end: 55.9,
+                lyric: "Never gonna make you cry, Never gonna say goodbye",
+            },
+            {
+                start: 56.1,
+                end: 60.0,
+                lyric: "Never gonna tell a lie and hurt you",
+            },
+            {
+                start: 61.2,
+                end: 65.0,
+                lyric: "We've known each other for so long",
+            },
+            {
+                start: 65.4,
+                end: 69.4,
+                lyric: "Your heart's been aching but you're too shy to say it",
+            },
+            {
+                start: 69.7,
+                end: 73.3,
+                lyric: "Inside we both know what's been going on",
+            },
+            {
+                start: 74.0,
+                end: 77.6,
+                lyric: "We know the game and we're gonna play it",
+            },
+            {
+                start: 78.0,
+                end: 82.5,
+                lyric: "And if you ask me how I'm feeling",
+            },
+            {
+                start: 82.8,
+                end: 85.5,
+                lyric: "Don't tell me you're too blind to see",
+            },
+            {
+                start: 85.7,
+                end: 89.7,
+                lyric: "Never gonna give you up, never gonna let you down",
+            },
+            {
+                start: 89.9,
+                end: 93.8,
+                lyric: "Never gonna run around and desert you",
+            },
+            {
+                start: 94.2,
+                end: 98.2,
+                lyric: "Never gonna make you cry, never gonna say goodbye",
+            },
+            {
+                start: 98.4,
+                end: 102.2,
+                lyric: "Never gonna tell a lie and hurt you",
+            },
+            {
+                start: 102.7,
+                end: 106.7,
+                lyric: "Never gonna give you up, never gonna let you down",
+            },
+            {
+                start: 106.9,
+                end: 110.5,
+                lyric: "Never gonna run around and desert you",
+            },
+            {
+                start: 111.1,
+                end: 115.1,
+                lyric: "Never gonna make you cry, never gonna say goodbye",
+            },
+            {
+                start: 115.3,
+                end: 119.1,
+                lyric: "Never gonna tell a lie and hurt you",
+            },
+            {
+                start: 120.3,
+                end: 123.5,
+                lyric: "(Ooh give you up)",
+            },
+            {
+                start: 124.3,
+                end: 127.7,
+                lyric: "(Ooh give you up)",
+            },
+            {
+                start: 128.7,
+                end: 132.0,
+                lyric: "(Ooh) Never gonna give, never gonna give (give you up)",
+            },
+            {
+                start: 132.6,
+                end: 136.1,
+                lyric: "(Ooh) Never gonna give, never gonna give (give you up)",
+            },
+            {
+                start: 137.2,
+                end: 141.1,
+                lyric: "We've known each other for so long",
+            },
+            {
+                start: 141.3,
+                end: 145.8,
+                lyric: "Your heart's been aching but you're too shy to say it (say it)",
+            },
+            {
+                start: 146.0,
+                end: 149.4,
+                lyric: "Inside we both know what's been going on",
+            },
+            {
+                start: 149.9,
+                end: 153.6,
+                lyric: "We know the game and we're gonna play it",
+            },
+            {
+                start: 154.0,
+                end: 158.3,
+                lyric: "I just want to tell you how I'm feeling",
+            },
+            {
+                start: 159.1,
+                end: 161.6,
+                lyric: "Gotta make you understand",
+            },
+            {
+                start: 161.8,
+                end: 165.8,
+                lyric: "Never gonna give you up, never gonna let you down",
+            },
+            {
+                start: 166.0,
+                end: 169.7,
+                lyric: "Never gonna run around and desert you",
+            },
+            {
+                start: 170.4,
+                end: 174.3,
+                lyric: "Never gonna make you cry, never gonna say goodbye",
+            },
+            {
+                start: 174.5,
+                end: 178.2,
+                lyric: "Never gonna tell a lie and hurt you",
+            },
+            {
+                start: 178.8,
+                end: 182.7,
+                lyric: "Never gonna give you up, never gonna let you down",
+            },
+            {
+                start: 182.9,
+                end: 186.7,
+                lyric: "Never gonna run around and desert you",
+            },
+            {
+                start: 187.2,
+                end: 191.2,
+                lyric: "Never gonna make you cry, never gonna say goodbye",
+            },
+            {
+                start: 191.4,
+                end: 195.1,
+                lyric: "Never gonna tell a lie and hurt you",
+            },
+            {
+                start: 195.6,
+                end: 199.7,
+                lyric: "Never gonna give you up, never gonna let you down",
+            },
+            {
+                start: 199.9,
+                end: 203.7,
+                lyric: "Never gonna run around and desert you",
+            },
+            {
+                start: 204.1,
+                end: 208.1,
+                lyric: "Never gonna make you cry, never gonna say goodbye",
+            },
+            {
+                start: 208.3,
+                end: 211.8,
+                lyric: "Never gonna tell a lie and hurt you",
+            },
+        ];
+
+        let called = false;
+        let previousLyric = "";
+        function handler() {
+            if (!called) {
+                called = true;
+                msg.classList.remove('noVisible');
+                innerMsg.classList.remove('noVisible');
+            }
+
+            const time = rick.currentTime;
+
+            if (time >= 18) {
+                msg.style.display = 'none';
+            }
+
+            const lyricObj = lyrics.filter(({ start, end, lyric }) => time >= start && time <= end);
+
+            if (lyricObj.length < 1) {
+                lyricsEl.classList.add('noVisible');
+                previousLyric = "";
+                return;
+            }
+
+            const lyric = lyricObj[0].lyric;
+
+            if (lyric === previousLyric) {
+                return;
+            }
+
+            previousLyric = lyric;
+
+            lyricsEl.innerText = lyric;
+            lyricsEl.classList.remove('noVisible');
+        }
+        rick.addEventListener('timeupdate', handler);
+
+        (async () => {
+            let tries = 0;
+            rick.muted = false;
+            while(tries < 300) {
+                tries++;
+                try {
+                    await rick.play();
+                    return;
+                } catch(e) { }
+            }
+
+            rick.muted = true;
+            while(tries < 300) {
+                tries++;
+                try {
+                    await rick.play();
+                    return;
+                } catch(e) { }
+            }
+        })();
+    </script>
+</body>
+</html>

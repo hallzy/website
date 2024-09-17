@@ -21,55 +21,103 @@
         }
     ],
     "languages": [
-        "Bash Script",
-        "C/ C++",
-        "HTML/ CSS",
-        "Java",
-        "JavaScript/ AJAX/ JQuery",
-        "TypeScript",
+        "JavaScript / jQuery",
+        "CSS / SASS / Bootstrap",
+        "MobX",
         "MySQL/ PostgreSQL",
-        "PHP",
-        "Python",
-        "VimScript"
+        "PHP / Laravel",
+        "HTML",
+        "Golang",
+        "C/ C++",
+        "Haskell",
+        "Python / Selenium",
+        "TypeScript",
+        "VimScript",
+        "Bash Script",
+        "Java"
     ],
-    "programs": [
+    "tools": [
+        "Jira",
         "Git/ SVN",
+        "Github / Bitbucket",
+        "Google Ad Manager",
+        "API",
+        "JSON",
+        "XML",
         "Linux (CLI proficient)",
         "Vim"
     ],
+    "skills": [
+        "Scrum / Agile",
+        "Project Leadership",
+        "Communication",
+        "Problem Solving",
+        "Mentoring"
+    ],
     "sections": {
+        "summary": {
+            "title": "Summary",
+            "entries": [
+                {
+                    "imgSrc": "",
+                    "boldTitle": "",
+                    "normalTitle": "",
+                    "timePeriod": "",
+                    "description": [
+                        "Full-stack software engineer with over 6 years of experience designing and developing scalable, user-friendly web applications.",
+                        "Proven track record in leading major frontend and backend projects, including the complete rewrite of an award-winning video player, resulting in a 4x reduction in code size and enhanced performance that saved the company from months of lost revenue.",
+                        "Skilled in JavaScript, PHP, relational databases, and modern frameworks like MobX.",
+                        "Adept at mentoring junior developers, optimizing code efficiency, and driving innovation in both corporate and open-source environments.",
+                        "Seeking to apply my technical expertise and leadership skills in a dynamic, growth-focused team to build cutting-edge software solutions."
+                    ],
+                    "skills": [
+                    ]
+                }
+            ]
+        },
         "work": {
             "title": "Work Experience",
             "entries": [
                 {
                     "imgSrc": "imgs/stnvideo.png",
-                    "boldTitle": "STN Video Inc.",
+                    "boldTitle": "STN Video",
                     "normalTitle": "Full Stack Web Developer",
-                    "timePeriod": "Oct 2020 - Present",
+                    "timePeriod": "Oct 2020 - May 2024",
                     "description": [
-                        "Working on various new features, enhancements, and bug fixes for the frontend of our Video Player",
-                        "Writing and maintaining Player Tests",
-                        "Created a new Admin tool on our Dashboard to expose how the our player's AI ranks video matches for a publisher's article"
+                        "Completely rewrote our award-winning Smart Match video player frontend from the ground up using the MobX reactivity framework.",
+                        "The code became easier to maintain and the file was 4x smaller while improving speed and revenue.",
+                        "The rewrite saved us from losing months of revenue because of a change that was made to Google Chrome's Heavy Ad Intervention.",
+                        "Writing and maintaining Player tests, improving the reliability of our code by catching bugs before a release.",
+                        "Created a new Admin tool on our Dashboard to expose how the player's AI ranks video matches for a publisher's article, improving the company's ability to understand why our AI chooses certain videos over others."
                     ],
                     "skills": [
+                        "Remote Work",
                         "JavaScript",
+                        "jQuery",
                         "MobX",
+                        "Agile",
+                        "Scrum",
                         "MySQL",
-                        "Selenium",
-                        "Python",
                         "Git",
+                        "Python",
+                        "Selenium",
                         "Jira",
+                        "PHP",
                         "Laravel",
-                        "JQuery",
+                        "CSS",
+                        "SASS",
                         "Bootstrap",
                         "Eloquent",
-                        "PHP",
-                        "SASS"
+                        "Google Ad Manager",
+                        "JSON",
+                        "XML",
+                        "Bash",
+                        "Vim"
                     ]
                 },
                 {
                     "imgSrc": "imgs/linuxmagic.png",
-                    "boldTitle": "LinuxMagic Inc.",
+                    "boldTitle": "LinuxMagic",
                     "normalTitle": "Full Stack Web Developer",
                     "timePeriod": "April 2018 - May 2020",
                     "description": [
@@ -80,16 +128,19 @@
                         "Mentored new Web Developer hires."
                     ],
                     "skills": [
+                        "JavaScript",
+                        "jQuery",
+                        "CSS",
+                        "Bootstrap",
                         "Proprietary PHP MVC Framework",
                         "CakePHP",
-                        "CSS",
-                        "JavaScript",
-                        "JQuery",
-                        "Bootstrap",
                         "MySQL",
                         "PostgreSQL",
+                        "SVN",
+                        "Agile",
+                        "Scrum",
                         "Bash",
-                        "SVN"
+                        "Vim"
                     ]
                 },
                 {
@@ -111,7 +162,7 @@
                 },
                 {
                     "imgSrc": "imgs/ericsson.ico",
-                    "boldTitle": "Ericsson Canada Inc.",
+                    "boldTitle": "Ericsson",
                     "normalTitle": "Software Developer Intern",
                     "timePeriod": "Jan 2015 - Aug 2015",
                     "description": [
@@ -129,15 +180,47 @@
             ]
         },
         "projects": {
-            "title": "Technical Projects",
+            "title": "Open Source Contributions",
             "entries": [
                 {
                     "imgSrc": "",
+                    "link": "https://github.com/mdn/content/issues/21002",
+                    "boldTitle": "Reporting Documentation Error to MDN Web Docs",
+                    "normalTitle": "",
+                    "timePeriod": "Sept 2022 - Aug 2024",
+                    "description": [
+                        "I discovered an undocumented stacking context trigger in the MDN Web Docs, which is a unified repository for documentation on web standards.",
+                        "At the time, it was not clear if it was a browser bug, or incomplete documentation. It turned out to be part of the feature specification so the documentation was just missing a reference to it.",
+                        "The MDN Web Docs has now been updated to reflect this feature that I found."
+                    ],
+                    "skills": [
+                        "CSS"
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "link": "https://github.com/microsoft/playwright/issues/9268",
+                    "boldTitle": "Found a Browser Crash Bug In Microsoft Playwright",
+                    "normalTitle": "",
+                    "timePeriod": "Oct 2021",
+                    "description": [
+                        "My Firefox browser would crash when running a particular test that used the apstag.js script from Amazon.",
+                        "I found that it appeared to be related to Firefox shimming that script internally which interfered with how Playwright worked.",
+                        "Microsoft fixed this bug a few weeks later."
+                    ],
+                    "skills": [
+                        "Playwright"
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "link": "https://github.com/hallzy/youtube-playlist-search",
                     "boldTitle": "Youtube Playlist Search Chrome Extension",
                     "normalTitle": "",
                     "timePeriod": "April 2021",
                     "description": [
-                        "Goal: Create an chrome extension that is able to search for videos in large playlists by filtering channel names and video titles.",
+                        "This is a project that I started which has 72 Stars on GitHub (as of September 17th 2024).",
+                        "Goal: Create a chrome extension that is able to search for videos in large playlists by filtering channel names and video titles.",
                         "Includes a custom built searchable dropdown list of channel names you can filter by.",
                         "The search filters are persistent per playlist across your devices.",
                         "Custom built lazy loading that loads 25 or so videos at a time in the view, while being able to search the whole playlist.",
@@ -152,12 +235,16 @@
                 },
                 {
                     "imgSrc": "",
+                    "entryClasses": "",
+                    "link": "https://github.com/hallzy/go-git-radar",
                     "boldTitle": "Go Git Radar",
                     "normalTitle": "",
                     "timePeriod": "Nov 2020",
                     "description": [
-                        "This was inspired by another project called git-radar which gives you a 'heads up display' for Git in your bash prompt but it no longer being developed and it was slow on larger git repositories.",
-                        "Go Git Radar is my git-radar clone written in Golang which contains additional features at twice the speed (five times the speed in certain situations)."
+                        "My Golang clone of \"Git Radar\" that is 5x faster for large repositories with additional features for enhanced usability.",
+                        "The original \"Git Radar\" was written in Bash which was inherently slow with large git repositories.",
+                        "This project gives you a \"heads up display\" for Git in your bash prompt. In other words, it gives you a summary of the state of your repository in your Bash prompt.",
+                        "I was able to dramatically improve the speed by making use of goroutines."
                     ],
                     "skills": [
                         "Golang"
@@ -165,46 +252,54 @@
                 },
                 {
                     "imgSrc": "",
-                    "boldTitle": "NES Tetris Web Clone",
-                    "normalTitle": "",
-                    "timePeriod": "Aug 2020",
-                    "description": [
-                        "Goal: To make a web based Tetris game that mimics the behaviour and rules of the classic NES Tetris game as closely as possible, with the ability to send a unique URL to a friend so that they are able to play the same sequence of pieces so you can compare your scores. The scores would be listed on the page for that game.",
-                        "Currently the game is in development. The game itself is playable but there are some bugs and issues I plan to address, and scores for the game are not saved or listed on the page. I plan to solve this by saving scores to a database, and using PHP to generate the game page with the scores listed."
-                    ],
-                    "skills": [
-                        "TypeScript",
-                        "PHP",
-                        "PostgreSQL",
-                        "HTML",
-                        "CSS"
-                    ]
-                },
-                {
-                    "imgSrc": "",
+                    "link": "https://github.com/hallzy/tv-show-notification",
                     "boldTitle": "TV Show Notification and Calendar",
                     "normalTitle": "",
                     "timePeriod": "May 2020",
                     "description": [
+                        "This is a project that I started.",
                         "Created a Google App Script that retrieves air dates for episodes of TV Shows that I watch. The script uses that information to figure out what episodes I don't have in my Google Calendar already and will automatically add them for me."
                     ],
                     "skills": [
-                        "Google App Script",
-                        "TypeScript"
+                        "Google App Script"
                     ]
                 },
                 {
                     "imgSrc": "",
-                    "boldTitle": "Electromagnetically Tethered Robot",
+                    "link": "https://github.com/marcobambini/gravity/pulls?page=1&q=is%3Apr+is%3Amerged+author%3Ahallzy",
+                    "boldTitle": "Gravity",
                     "normalTitle": "",
-                    "timePeriod": "April 2014",
+                    "timePeriod": "Mar 2017 - Apr 2018",
                     "description": [
-                        "Programmed a custom built autonomous robot to follow an electromagnetic signal. I also programmed the custom built remote that created this EM signal.",
-                        "The remote could also send binary data through the magnetic field to tell the robot to perform certain manoeuvres such as spin 180 degrees, move back and forth, and parallel park.",
-                        "Resulted in a fully functioning robot and a high project grade."
+                        "Follow the link to see all 36 of my merged pull requests.",
+                        "Gravity is a dynamically typed, lightweight, embeddable programming language written in C without any external dependencies (except for stdlib).",
+                        "Gravity is the core language built into Creo, which was a project created to make it easier to write code for iOS and Android. Creo is no longer available.",
+                        "I fixed countless compilation warnings.",
+                        "I fixed and contributed to the documentation and automated tests.",
+                        "I added bitwise operations, string manipulation and retrieval functions, a random number generator, and math functions to Gravity."
                     ],
                     "skills": [
-                        "C (Embedded)"
+                        "C",
+                        "Gravity",
+                        "Github"
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "link": "https://github.com/michaeldfallen/git-radar/pulls?q=is%3Apr+is%3Amerged+author%3Ahallzy+",
+                    "boldTitle": "Git Radar",
+                    "normalTitle": "",
+                    "timePeriod": "Oct 2015 - Jan 2016",
+                    "description": [
+                        "Follow the link to see all of my merged pull requests.",
+                        "This project gives you a \"heads up display\" for Git in your bash prompt. In other words, it gives you a summary of the state of your repository in your Bash prompt.",
+                        "I added a configuration variable to customize the time between automatic \"git fetch\" commands.",
+                        "Fixed a \"git stash\" error in the script.",
+                        "I was active in the reported issues, offering suggestions and solutions to other users and contributors."
+                    ],
+                    "skills": [
+                        "Bash Script",
+                        "Github"
                     ]
                 }
             ]
@@ -245,21 +340,11 @@
                     "normalTitle": "",
                     "timePeriod": "",
                     "description": [
-                        "Programming and computers",
-                        "I love to learn and figure out how things work",
-                        [
-                            "Contributing to open source projects such as:",
-                            "Gravity programming language",
-                            "Git Radar",
-                            "Various Vim plugins"
-                        ],
-                        "Suckless Software such as DWM, dmenu, sent, st, and sxiv",
-                        "Encryption",
-                        "Computer and information security",
-                        "Configuring my Vim text editor so that it now has over 175,000 lines of additional configuration code and plugins which increases my productivity when coding and editing text.",
-                        "I perform all of my own car repairs and maintenance",
-                        "Skiing, Snowboarding",
-                        "Baseball, Hockey, Lacrosse"
+                        "Learning and trying new things",
+                        "Skiing, snowboarding",
+                        "Baseball, hockey, lacrosse",
+                        "Walking, running, hiking",
+                        "Travelling"
                     ],
                     "skills": [
                     ]

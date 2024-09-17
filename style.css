@@ -69,6 +69,7 @@ img {
     margin-top: 2em;
     display: grid;
     grid-template-areas:
+        'sidebar            summary-section'
         'sidebar            work-section'
         'projects-section   projects-section'
         'education-section  education-section'
@@ -94,6 +95,10 @@ img {
     list-style-type: none;
 }
 
+.section.summary {
+    grid-area: summary-section;
+}
+
 .section.work {
     grid-area: work-section;
 }
@@ -115,17 +120,20 @@ img {
     font-weight: bold;
     margin-bottom: 1em;
 }
-.section.work .colour {
+.section.summary .colour {
     color: #00A8C0;
 }
-.section.projects .colour {
+.section.work .colour {
     color: #E51760;
 }
-.section.education .colour {
+.section.projects .colour {
     color: #E6942E;
 }
-.section.interests .colour {
+.section.education .colour {
     color: #9EBD3A;
+}
+.section.interests .colour {
+    color: #00A8C0;
 }
 
 .section .entry {
@@ -163,6 +171,31 @@ img {
 @media print {
     :root {
         background-color: white;
+    }
+
+    .m-t-1
+    {
+        margin-top: 1em;
+    }
+
+    .m-t-2
+    {
+        margin-top: 2em;
+    }
+
+    .m-t-3
+    {
+        margin-top: 3em;
+    }
+
+    .m-t-4
+    {
+        margin-top: 4em;
+    }
+
+    .m-t-5
+    {
+        margin-top: 5em;
     }
 
     body {
