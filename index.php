@@ -216,11 +216,11 @@ function lists2html($className, array $arr) : string {
                     <?php endif; ?>
 
                     <?php if ($entry->boldTitle): ?>
-                        <?php if ($entry->link): ?>
+                        <?php if (isset($entry->link) && $entry->link): ?>
                             <a href="<?= $entry->link ?>" target="_blank">
                         <?php endif; ?>
                         <span class='heavy'><?= $entry->boldTitle ?></span>
-                        <?php if ($entry->link): ?>
+                        <?php if (isset($entry->link) && $entry->link): ?>
                             </a>
                         <?php endif; ?>
                     <?php endif; ?>

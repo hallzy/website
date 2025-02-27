@@ -5,9 +5,9 @@
     "position": "Software Engineer",
     "contactInfo": [
         {
-            "href": "mailto:steven@stmhall.ca",
+            "href": "mailto:hire.steven.hall@gmail.com",
             "imgSrc": "imgs/email.png",
-            "text": "steven@stmhall.ca"
+            "text": "hire.steven.hall@gmail.com"
         },
         {
             "href": "https://github.com/hallzy",
@@ -22,6 +22,7 @@
     ],
     "languages": [
         "JavaScript / jQuery",
+        "Node.js",
         "CSS / SASS / Bootstrap",
         "MobX",
         "MySQL/ PostgreSQL",
@@ -30,6 +31,7 @@
         "Golang",
         "C/ C++",
         "Haskell",
+        "Scala",
         "Python / Selenium",
         "TypeScript",
         "VimScript",
@@ -45,7 +47,9 @@
         "JSON",
         "XML",
         "Linux (CLI proficient)",
-        "Vim"
+        "Vim",
+        "Playwright",
+        "Cypress"
     ],
     "skills": [
         "Scrum / Agile",
@@ -65,10 +69,9 @@
                     "timePeriod": "",
                     "description": [
                         "Full-stack software engineer with over 6 years of experience designing and developing scalable, user-friendly web applications.",
-                        "Proven track record in leading major frontend and backend projects, including the complete rewrite of an award-winning video player, resulting in a 4x reduction in code size and enhanced performance that saved the company from months of lost revenue.",
-                        "Skilled in JavaScript, PHP, relational databases, and modern frameworks like MobX.",
-                        "Adept at mentoring junior developers, optimizing code efficiency, and driving innovation in both corporate and open-source environments.",
-                        "Seeking to apply my technical expertise and leadership skills in a dynamic, growth-focused team to build cutting-edge software solutions."
+                        "Proven track record in leading major frontend and backend projects.",
+                        "Experienced in mentoring junior developers, optimizing code efficiency, and driving innovation in a corporate.",
+                        "Seeking to apply my technical expertise skills in a dynamic, growth-focused team to build cutting-edge software solutions."
                     ],
                     "skills": [
                     ]
@@ -86,9 +89,12 @@
                     "description": [
                         "Completely rewrote our award-winning Smart Match video player frontend from the ground up using the MobX reactivity framework.",
                         "The code became easier to maintain and the file was 4x smaller while improving speed and revenue.",
-                        "The rewrite saved us from losing months of revenue because of a change that was made to Google Chrome's Heavy Ad Intervention.",
-                        "Writing and maintaining Player tests, improving the reliability of our code by catching bugs before a release.",
-                        "Created a new Admin tool on our Dashboard to expose how the player's AI ranks video matches for a publisher's article, improving the company's ability to understand why our AI chooses certain videos over others."
+                        "The rewrite prevented a significant loss in revenue due to a change in Google Chrome's Heavy Ad Intervention.",
+                        "Built a database driven Admin tool to manage and configure settings for the player. The tool's content is generated entirely from the result of joining multiple database tables using Laravel and Eloquent so that adding a new setting to our player just requires updating tables in the database instead of needing to wait for a dashboard release, making it easier for our account managers to make use of new features quickly.",
+                        "Created a new Admin tool on our Dashboard to expose how the player's AI ranks video matches for a publisher's article, improving the company's ability to understand why our AI chooses certain videos over others.",
+                        "Regularly participated in code reviews for our video player and dashboard products.",
+                        "Released weekly A/B tests for the video player by merging approved pull requests. Coordinated with our revenue department to confirm player performance is at an expected level before fully releasing the changes.",
+                        "Wrote and maintained player tests, actively participated in the QA process, and worked closely with our QA team. Improved code reliability by catching bugs early in the QA process."
                     ],
                     "skills": [
                         "Remote Work",
@@ -108,6 +114,8 @@
                         "SASS",
                         "Bootstrap",
                         "Eloquent",
+                        "Playwright",
+                        "Cypress",
                         "Google Ad Manager",
                         "JSON",
                         "XML",
@@ -119,13 +127,13 @@
                     "imgSrc": "imgs/linuxmagic.png",
                     "boldTitle": "LinuxMagic",
                     "normalTitle": "Full Stack Web Developer",
-                    "timePeriod": "April 2018 - May 2020",
+                    "timePeriod": "Apr 2018 - May 2020",
                     "description": [
-                        "Worked on feature enhancements, customer requests, and bug fixes for our carrier grade email platform (MagicMail), CRM, sales system, and product websites (MagicSpam, SpamRATS)",
+                        "Improved carrier-grade email platform (MagicMail) by enhancing features, addressing customer requests, and fixing bugs, CRM, sales system, and product websites (MagicSpam, SpamRATS)",
                         "Migrated the sales system from an Oracle database to PostgreSQL.",
                         "Led a project to redesign and rewrite the SpamRATS product website from the ground up.",
-                        "Completed work orders for customers by communicating directly with the customer and performing their development work in a timely and professional manner.",
-                        "Mentored new Web Developer hires."
+                        "Completed work orders by communicating directly with customers in a timely and professional manner.",
+                        "Mentored new Web Developer hires, ensuring smooth integration and adherence to company coding standards."
                     ],
                     "skills": [
                         "JavaScript",
@@ -179,17 +187,45 @@
                 }
             ]
         },
+        "education": {
+            "title": "Education",
+            "entries": [
+                {
+                    "imgSrc": "",
+                    "boldTitle": "University of British Columbia",
+                    "normalTitle": "",
+                    "timePeriod": "Sep 2013 - Dec 2017",
+                    "description": [
+                        "Bachelor of Applied Science (BASc) in Software Engineering"
+                    ],
+                    "skills": [
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "boldTitle": "Kwantlen Polytechnic University",
+                    "normalTitle": "",
+                    "timePeriod": "Sep 2012 - Apr 2013",
+                    "description": [
+                        "Engineering Certificate"
+                    ],
+                    "skills": [
+                    ]
+                }
+            ]
+        },
         "projects": {
-            "title": "Open Source Contributions",
+            "title": "Open Source Contributions & Bug Reports",
             "entries": [
                 {
                     "imgSrc": "",
                     "link": "https://github.com/mdn/content/issues/21002",
                     "boldTitle": "Reporting Documentation Error to MDN Web Docs",
                     "normalTitle": "",
-                    "timePeriod": "Sept 2022 - Aug 2024",
+                    "timePeriod": "Sep 2022 - Aug 2024",
                     "description": [
-                        "I discovered an undocumented stacking context trigger in the MDN Web Docs, which is a unified repository for documentation on web standards.",
+                        "While debugging the STN video player on a live website I discovered an undocumented stacking context trigger in the MDN Web Docs, which is a unified repository for documentation on web standards.",
+                        "There was a stacking context created on the page that was causing the video player problems, but the way that the stacking context was created was not documented.",
                         "At the time, it was not clear if it was a browser bug, or incomplete documentation. It turned out to be part of the feature specification so the documentation was just missing a reference to it.",
                         "The MDN Web Docs has now been updated to reflect this feature that I found."
                     ],
@@ -199,14 +235,30 @@
                 },
                 {
                     "imgSrc": "",
+                    "link": "",
+                    "boldTitle": "Found an Authorization Bug in AWS",
+                    "normalTitle": "",
+                    "timePeriod": "Apr 2024",
+                    "description": [
+                        "I reported to Amazon that it is possible to save changes in an editor, such as when editing a Lambda function, after you are logged out if the page with the editor is already open.",
+                        "After leaving a Lambda editor open, I discovered changes could be saved despite my session expiring.",
+                        "I was able to reproduce it if I logged out of AWS myself from a different tab as well.",
+                        "After reporting the bug to Amazon, I got an email saying that they are looking into it, and are going to fix it."
+                    ],
+                    "skills": [
+                    ]
+                },
+                {
+                    "imgSrc": "",
                     "link": "https://github.com/microsoft/playwright/issues/9268",
                     "boldTitle": "Found a Browser Crash Bug In Microsoft Playwright",
                     "normalTitle": "",
                     "timePeriod": "Oct 2021",
                     "description": [
-                        "My Firefox browser would crash when running a particular test that used the apstag.js script from Amazon.",
-                        "I found that it appeared to be related to Firefox shimming that script internally which interfered with how Playwright worked.",
-                        "Microsoft fixed this bug a few weeks later."
+                        "While writing tests for the STN video player when using the apstag.js script from Amazon, my Firefox browser would crash.",
+                        "I did some digging into the Firefox code and noticed a reference to the apstag.js script where Firefox was shimming the script so that no network request had to go out for the file.",
+                        "Disabling that shim fixed the problem and I noticed that there were other shimmed files that also caused the test to fail in Playwright.",
+                        "I reported this bug to Microsoft and they fixed it a few weeks later."
                     ],
                     "skills": [
                         "Playwright"
@@ -214,10 +266,11 @@
                 },
                 {
                     "imgSrc": "",
+                    "entryClasses": "",
                     "link": "https://github.com/hallzy/youtube-playlist-search",
                     "boldTitle": "Youtube Playlist Search Chrome Extension",
                     "normalTitle": "",
-                    "timePeriod": "April 2021",
+                    "timePeriod": "Apr 2021",
                     "description": [
                         "This is a project that I started which has 72 Stars on GitHub (as of September 17th 2024).",
                         "Goal: Create a chrome extension that is able to search for videos in large playlists by filtering channel names and video titles.",
@@ -300,33 +353,6 @@
                     "skills": [
                         "Bash Script",
                         "Github"
-                    ]
-                }
-            ]
-        },
-        "education": {
-            "title": "Education",
-            "entries": [
-                {
-                    "imgSrc": "",
-                    "boldTitle": "University of British Columbia",
-                    "normalTitle": "",
-                    "timePeriod": "Sept 2013 - Dec 2017",
-                    "description": [
-                        "Bachelor of Applied Science (BASc) in Software Engineering"
-                    ],
-                    "skills": [
-                    ]
-                },
-                {
-                    "imgSrc": "",
-                    "boldTitle": "Kwantlen Polytechnic University",
-                    "normalTitle": "",
-                    "timePeriod": "Sept 2012 - April 2013",
-                    "description": [
-                        "Engineering Certificate"
-                    ],
-                    "skills": [
                     ]
                 }
             ]

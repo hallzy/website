@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
 
+* {
+    /* Without this, "ft" gets converted to a ligature */
+    font-variant-ligatures: none;
+}
+
 :root {
     font-family: 'Source Sans Pro', monospace;
     font-weight: lighter;
@@ -26,6 +31,30 @@ body {
 a {
     font-weight: normal;
     text-decoration: none;
+}
+
+a:after {
+    content: "";
+    width: 1em;
+    height: 1em;
+    background-image: url("imgs/link.png");
+    background-size: 1em;
+    top: 2px;
+    left: -6px;
+    position: relative;
+    display: inline-block;
+}
+
+.contact a:after {
+    content: "";
+    width: 1em;
+    height: 1em;
+    background-image: url("imgs/link.png");
+    background-size: 1em;
+    top: 0px;
+    left: 3px;
+    position: relative;
+    display: inline-block;
 }
 
 a:hover {
@@ -71,13 +100,46 @@ img {
     grid-template-areas:
         'sidebar            summary-section'
         'sidebar            work-section'
-        'projects-section   projects-section'
         'education-section  education-section'
+        'projects-section   projects-section'
         'interests-section  interests-section'
     ;
     grid-gap: 0ch 4ch;
     grid-auto-columns: 1fr 4fr;
     padding: 0px 5ch;
+}
+
+/* Extra Small Screens */
+@media (max-width: 370px) {
+    .lastName {
+        display: block;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 550px) {
+    .content {
+        grid-template-areas:
+            'sidebar'
+            'summary-section'
+            'work-section'
+            'education-section'
+            'projects-section'
+            'interests-section'
+        ;
+    }
+
+    .contact .img-container {
+        justify-content: center;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .section .heading {
+        text-align: center;
+    }
 }
 
 .sidebar {
@@ -169,6 +231,10 @@ img {
 }
 
 @media print {
+    /* li { */
+    /*     page-break-inside: avoid; */
+    /* } */
+
     :root {
         background-color: white;
     }
@@ -198,6 +264,31 @@ img {
         margin-top: 5em;
     }
 
+    .m-t-6
+    {
+        margin-top: 6em;
+    }
+
+    .m-t-7
+    {
+        margin-top: 7em;
+    }
+
+    .m-t-8
+    {
+        margin-top: 8em;
+    }
+
+    .m-t-9
+    {
+        margin-top: 9em;
+    }
+
+    .m-t-10
+    {
+        margin-top: 10em;
+    }
+
     body {
         box-shadow: none;
         margin: 0px;
@@ -210,7 +301,6 @@ img {
     /* } */
 
     a {
-        color: black;
         font-weight: lighter;
     }
 
@@ -218,6 +308,8 @@ img {
         size: letter;
         margin-left: 0cm;
         margin-right: 0cm;
+        margin-top: 1cm;
+        margin-bottom: 1cm;
 
         @bottom-center {
             content: "Steven Hall's Resume";
