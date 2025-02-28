@@ -1,125 +1,5 @@
 <?php
 
-function array_some(array $array, callable $fn) {
-    foreach ($array as $value) {
-        if($fn($value)) {
-            return true;
-        }
-    }
-    return false;
-}
-
-function get_client_ip()
-{
-    $ipaddress = '';
-    if (isset($_SERVER['HTTP_CLIENT_IP'])) {
-        $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
-    } else if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-        $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
-    } else if (isset($_SERVER['HTTP_X_FORWARDED'])) {
-        $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
-    } else if (isset($_SERVER['HTTP_FORWARDED_FOR'])) {
-        $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
-    } else if (isset($_SERVER['HTTP_FORWARDED'])) {
-        $ipaddress = $_SERVER['HTTP_FORWARDED'];
-    } else if (isset($_SERVER['REMOTE_ADDR'])) {
-        $ipaddress = $_SERVER['REMOTE_ADDR'];
-    } else {
-        $ipaddress = 'UNKNOWN';
-    }
-
-    return $ipaddress;
-}
-
-$publicIP = get_client_ip();
-$json     = file_get_contents("http://ipinfo.io/$publicIP/geo");
-$json     = json_decode($json, true);
-
-$country  = $_GET['force'] ?? $json['country'];
-$region   = $json['region'];
-$city     = $json['city'];
-$postal     = $json['postal'];
-$forced = isset($_GET['force']);
-
-$ua = $_SERVER['HTTP_USER_AGENT'] ?? 'N/A';
-$httpReferer = $_SERVER['HTTP_REFERER'] ?? 'No HTTP Referer';
-
-$customReferers = [
-    'ig'  => "My Instagram Profile",
-    'gh'  => "My GitHub Profile",
-    'ghw' => "My Website Repo on GitHub",
-    'li'  => "My LinkedIn Profile",
-];
-
-$customRefererIdx = $_GET['referer'] ?? $_GET['r'] ?? 'No Custom Referer';
-$customReferer = $customReferers[$customRefererIdx] ?? $customRefererIdx;
-
-$ignoreUA = [
-    "bot",
-    "scan",
-    "a simple request",
-];
-
-$goodUA = !array_some(
-    $ignoreUA,
-    function($keyword) use ($ua) {
-        return strpos($ua, $keyword) !== false;
-    }
-);
-
-$date = getdate();
-
-$year = $date['year'];
-$month = str_pad($date['mon'], 2, "0", STR_PAD_LEFT);
-$day = str_pad($date['mday'], 2, "0", STR_PAD_LEFT);
-$hour = $date['hours'];
-$min = str_pad($date['minutes'], 2, "0", STR_PAD_LEFT);
-$sec = str_pad($date['seconds'], 2, "0", STR_PAD_LEFT);
-
-switch($country) {
-    case 'RU':
-        if (!$forced) {
-            file_put_contents('russian_accesses.txt', "{$year}/{$month}/{$day} {$hour}:{$min}:{$sec} UTC -- {$publicIP} -- {$ua}\n", FILE_APPEND);
-        }
-
-        // Feb 24
-        http_response_code(224);
-        die("
-            <!DOCTYPE html>
-            <html lang='en'>
-            <head>
-                <meta charset='UTF-8'>
-                <title>🇺🇦 Slava Ukraini! Heroiam Slava! 🇺🇦</title>
-                <style>
-                    body
-                    {
-                        text-align: center;
-                        margin-top: 30vh;
-                        font-size: 30px;
-                        color: yellow;
-                        background-color: #034f9a;
-                    }
-
-                    .putin
-                    {
-                        color: tomato;
-                    }
-                </style>
-            </head>
-            <body>
-                <h1>🇺🇦 Slava Ukraini! 🇺🇦</h1>
-                <h1>🇺🇦 Heroiam Slava! 🇺🇦</h1>
-                <h1 class='putin'>Fuck Putin!</h1>
-            </body>
-        ");
-        break;
-    default:
-        if (!$forced && $goodUA) {
-            file_put_contents('website_accesses.txt', "{$year}/{$month}/{$day} {$hour}:{$min}:{$sec} UTC -- {$publicIP} -- {$httpReferer} -- {$customReferer} -- {$city} -- {$region} -- {$country} -- {$postal} -- {$ua}\n", FILE_APPEND);
-        }
-        break;
-}
-
 $jsonStr = file_get_contents("data.json");
 $data = json_decode($jsonStr);
 
@@ -173,8 +53,8 @@ function lists2html($className, array $arr) : string {
                     <div class='title'>Contact</div>
                     <ul>
                     <?php foreach($data->contactInfo as $contactInfo): ?>
-                        <li>
-                            <a class='img-container' href='<?= $contactInfo->href ?>'><img src='<?= $contactInfo->imgSrc ?>'><?= $contactInfo->text ?></a>
+                        <li class="<?= $contactInfo->class ?>">
+                            <a class='' href='<?= $contactInfo->href ?>'><img src='<?= $contactInfo->imgSrc ?>'><?= $contactInfo->text ?></a>
                         </li>
                     <?php endforeach; ?>
                     </ul>
@@ -196,10 +76,26 @@ function lists2html($className, array $arr) : string {
                     </ul>
                 </div>
                 <div>
-                    <div class='title'>Soft Skills</div>
+                    <div class='title skills'>Soft Skills</div>
                     <ul>
                     <?php foreach($data->skills as $skill): ?>
                         <li><?= $skill ?></li>
+                    <?php endforeach; ?>
+                    </ul>
+                </div>
+                <div>
+                    <div class='title'>My Projects</div>
+                    <ul>
+                    <?php foreach($data->projects as $project): ?>
+                        <li><?= $project ?></li>
+                    <?php endforeach; ?>
+                    </ul>
+                </div>
+                <div>
+                    <div class='title'>Open Source</div>
+                    <ul>
+                    <?php foreach($data->openSource as $openSource): ?>
+                        <li><?= $openSource ?></li>
                     <?php endforeach; ?>
                     </ul>
                 </div>
@@ -236,6 +132,11 @@ function lists2html($className, array $arr) : string {
                 <?php endif; ?>
 
                     <div class='description'>
+
+                    <?php if (isset($entry->summary)): ?>
+                        <div class='summary'><?= $entry->summary ?></div>
+                    <?php endif; ?>
+
                         <ul>
                             <?= lists2html("$className-$idx", $entry->description) ?>
 

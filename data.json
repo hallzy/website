@@ -5,6 +5,12 @@
     "position": "Software Engineer",
     "contactInfo": [
         {
+            "href": "/steven-hall-resume.pdf",
+            "imgSrc": "imgs/download.png",
+            "class": "print-d-none",
+            "text": "Download PDF"
+        },
+        {
             "href": "mailto:hire.steven.hall@gmail.com",
             "imgSrc": "imgs/email.png",
             "text": "hire.steven.hall@gmail.com"
@@ -58,6 +64,18 @@
         "Problem Solving",
         "Mentoring"
     ],
+    "projects": [
+        "<a href='https://github.com/hallzy/website'>This Resume!</a>",
+        "<a href='https://github.com/hallzy/go-git-radar'>Go Git Radar</a>",
+        "<a href='https://github.com/hallzy/tv-show-notification'>TV Show Calendar</a>",
+        "<a href='https://github.com/hallzy/youtube-playlist-search'>YouTube Playlist Search</a>"
+    ],
+    "openSource": [
+        "<a href='https://github.com/mdn/content/issues/21002'>MDN Web Documentation Error</a>",
+        "<a href='https://github.com/microsoft/playwright/issues/9268'>Browser Crash in Playwright</a>",
+        "<a href='https://github.com/marcobambini/gravity/pulls?page=1&q=is%3Apr+is%3Amerged+author%3Ahallzy'>Gravity</a>",
+        "<a href='https://github.com/michaeldfallen/git-radar/pulls?q=is%3Apr+is%3Amerged+author%3Ahallzy+'>Git Radar</a>"
+    ],
     "sections": {
         "summary": {
             "title": "Summary",
@@ -70,8 +88,9 @@
                     "description": [
                         "Full-stack software engineer with over 6 years of experience designing and developing scalable, user-friendly web applications.",
                         "Proven track record in leading major frontend and backend projects.",
-                        "Experienced in mentoring junior developers, optimizing code efficiency, and driving innovation in a corporate.",
-                        "Seeking to apply my technical expertise skills in a dynamic, growth-focused team to build cutting-edge software solutions."
+                        "Experienced in mentoring junior developers, optimizing code efficiency, and driving innovation in a corporate environment.",
+                        "Adaptable and quick-learning professional with a strong ability to grasp new technologies and concepts efficiently.",
+                        "Seeking to apply my technical expertise in a dynamic, growth-focused team to build cutting-edge software solutions."
                     ],
                     "skills": [
                     ]
@@ -86,12 +105,13 @@
                     "boldTitle": "STN Video",
                     "normalTitle": "Full Stack Web Developer",
                     "timePeriod": "Oct 2020 - May 2024",
+                    "summary": "STN Video was sold at the end of 2023, leading to a downsizing of its Canadian development team. During my tenure, I contributed to the development of STN Video's award-winning Online Video Platform. This platform featured a publisher and administrative interface along with an AI-powered video player that automatically serves contextually relevant content and ads across prominent outlets such as the New York Post, Chicago Tribune, and the Las Vegas Review-Journal. The player served 55 million monthly viewers and generated 3 billion video views on 2 million premium videos, driving millions in monthly ad revenue.",
                     "description": [
                         "Completely rewrote our award-winning Smart Match video player frontend from the ground up using the MobX reactivity framework.",
                         "The code became easier to maintain and the file was 4x smaller while improving speed and revenue.",
                         "The rewrite prevented a significant loss in revenue due to a change in Google Chrome's Heavy Ad Intervention.",
-                        "Built a database driven Admin tool to manage and configure settings for the player. The tool's content is generated entirely from the result of joining multiple database tables using Laravel and Eloquent so that adding a new setting to our player just requires updating tables in the database instead of needing to wait for a dashboard release, making it easier for our account managers to make use of new features quickly.",
-                        "Created a new Admin tool on our Dashboard to expose how the player's AI ranks video matches for a publisher's article, improving the company's ability to understand why our AI chooses certain videos over others.",
+                        "Built a database driven admin tool to manage and configure settings for the player. The tool's content is generated entirely from the result of joining multiple database tables using Laravel and Eloquent so that adding a new setting to our player just requires updating tables in the database instead of needing to wait for a dashboard release, making it easier for our account managers to make use of new features quickly.",
+                        "Created a new admin tool on our Dashboard to expose how the player's AI ranks video matches for a publisher's article, improving the company's ability to understand why our AI chooses certain videos over others.",
                         "Regularly participated in code reviews for our video player and dashboard products.",
                         "Released weekly A/B tests for the video player by merging approved pull requests. Coordinated with our revenue department to confirm player performance is at an expected level before fully releasing the changes.",
                         "Wrote and maintained player tests, actively participated in the QA process, and worked closely with our QA team. Improved code reliability by catching bugs early in the QA process."
@@ -128,6 +148,7 @@
                     "boldTitle": "LinuxMagic",
                     "normalTitle": "Full Stack Web Developer",
                     "timePeriod": "Apr 2018 - May 2020",
+                    "summary": "During the COVID-19 pandemic in 2020, LinuxMagic downsized its operations. At LinuxMagic, I contributed to the development of MagicMail - a comprehensive email platform designed for small ISPs and Telcos. My work involved creating robust webmail clients for end-users, user interfaces for managing email accounts and settings, and an administrative dashboard that enabled ISPs to efficiently manage users, adjust server settings, and access support tools.",
                     "description": [
                         "Improved carrier-grade email platform (MagicMail) by enhancing features, addressing customer requests, and fixing bugs, CRM, sales system, and product websites (MagicSpam, SpamRATS)",
                         "Migrated the sales system from an Oracle database to PostgreSQL.",
@@ -208,169 +229,6 @@
                     "timePeriod": "Sep 2012 - Apr 2013",
                     "description": [
                         "Engineering Certificate"
-                    ],
-                    "skills": [
-                    ]
-                }
-            ]
-        },
-        "projects": {
-            "title": "Open Source Contributions & Bug Reports",
-            "entries": [
-                {
-                    "imgSrc": "",
-                    "link": "https://github.com/mdn/content/issues/21002",
-                    "boldTitle": "Reporting Documentation Error to MDN Web Docs",
-                    "normalTitle": "",
-                    "timePeriod": "Sep 2022 - Aug 2024",
-                    "description": [
-                        "While debugging the STN video player on a live website I discovered an undocumented stacking context trigger in the MDN Web Docs, which is a unified repository for documentation on web standards.",
-                        "There was a stacking context created on the page that was causing the video player problems, but the way that the stacking context was created was not documented.",
-                        "At the time, it was not clear if it was a browser bug, or incomplete documentation. It turned out to be part of the feature specification so the documentation was just missing a reference to it.",
-                        "The MDN Web Docs has now been updated to reflect this feature that I found."
-                    ],
-                    "skills": [
-                        "CSS"
-                    ]
-                },
-                {
-                    "imgSrc": "",
-                    "link": "",
-                    "boldTitle": "Found an Authorization Bug in AWS",
-                    "normalTitle": "",
-                    "timePeriod": "Apr 2024",
-                    "description": [
-                        "I reported to Amazon that it is possible to save changes in an editor, such as when editing a Lambda function, after you are logged out if the page with the editor is already open.",
-                        "After leaving a Lambda editor open, I discovered changes could be saved despite my session expiring.",
-                        "I was able to reproduce it if I logged out of AWS myself from a different tab as well.",
-                        "After reporting the bug to Amazon, I got an email saying that they are looking into it, and are going to fix it."
-                    ],
-                    "skills": [
-                    ]
-                },
-                {
-                    "imgSrc": "",
-                    "link": "https://github.com/microsoft/playwright/issues/9268",
-                    "boldTitle": "Found a Browser Crash Bug In Microsoft Playwright",
-                    "normalTitle": "",
-                    "timePeriod": "Oct 2021",
-                    "description": [
-                        "While writing tests for the STN video player when using the apstag.js script from Amazon, my Firefox browser would crash.",
-                        "I did some digging into the Firefox code and noticed a reference to the apstag.js script where Firefox was shimming the script so that no network request had to go out for the file.",
-                        "Disabling that shim fixed the problem and I noticed that there were other shimmed files that also caused the test to fail in Playwright.",
-                        "I reported this bug to Microsoft and they fixed it a few weeks later."
-                    ],
-                    "skills": [
-                        "Playwright"
-                    ]
-                },
-                {
-                    "imgSrc": "",
-                    "entryClasses": "",
-                    "link": "https://github.com/hallzy/youtube-playlist-search",
-                    "boldTitle": "Youtube Playlist Search Chrome Extension",
-                    "normalTitle": "",
-                    "timePeriod": "Apr 2021",
-                    "description": [
-                        "This is a project that I started which has 72 Stars on GitHub (as of September 17th 2024).",
-                        "Goal: Create a chrome extension that is able to search for videos in large playlists by filtering channel names and video titles.",
-                        "Includes a custom built searchable dropdown list of channel names you can filter by.",
-                        "The search filters are persistent per playlist across your devices.",
-                        "Custom built lazy loading that loads 25 or so videos at a time in the view, while being able to search the whole playlist.",
-                        "Very large playlists have their video metadata saved for faster retrieval the next time the extension is opened."
-                    ],
-                    "skills": [
-                        "JavaScript",
-                        "Youtube API",
-                        "CSS",
-                        "HTML"
-                    ]
-                },
-                {
-                    "imgSrc": "",
-                    "entryClasses": "",
-                    "link": "https://github.com/hallzy/go-git-radar",
-                    "boldTitle": "Go Git Radar",
-                    "normalTitle": "",
-                    "timePeriod": "Nov 2020",
-                    "description": [
-                        "My Golang clone of \"Git Radar\" that is 5x faster for large repositories with additional features for enhanced usability.",
-                        "The original \"Git Radar\" was written in Bash which was inherently slow with large git repositories.",
-                        "This project gives you a \"heads up display\" for Git in your bash prompt. In other words, it gives you a summary of the state of your repository in your Bash prompt.",
-                        "I was able to dramatically improve the speed by making use of goroutines."
-                    ],
-                    "skills": [
-                        "Golang"
-                    ]
-                },
-                {
-                    "imgSrc": "",
-                    "link": "https://github.com/hallzy/tv-show-notification",
-                    "boldTitle": "TV Show Notification and Calendar",
-                    "normalTitle": "",
-                    "timePeriod": "May 2020",
-                    "description": [
-                        "This is a project that I started.",
-                        "Created a Google App Script that retrieves air dates for episodes of TV Shows that I watch. The script uses that information to figure out what episodes I don't have in my Google Calendar already and will automatically add them for me."
-                    ],
-                    "skills": [
-                        "Google App Script"
-                    ]
-                },
-                {
-                    "imgSrc": "",
-                    "link": "https://github.com/marcobambini/gravity/pulls?page=1&q=is%3Apr+is%3Amerged+author%3Ahallzy",
-                    "boldTitle": "Gravity",
-                    "normalTitle": "",
-                    "timePeriod": "Mar 2017 - Apr 2018",
-                    "description": [
-                        "Follow the link to see all 36 of my merged pull requests.",
-                        "Gravity is a dynamically typed, lightweight, embeddable programming language written in C without any external dependencies (except for stdlib).",
-                        "Gravity is the core language built into Creo, which was a project created to make it easier to write code for iOS and Android. Creo is no longer available.",
-                        "I fixed countless compilation warnings.",
-                        "I fixed and contributed to the documentation and automated tests.",
-                        "I added bitwise operations, string manipulation and retrieval functions, a random number generator, and math functions to Gravity."
-                    ],
-                    "skills": [
-                        "C",
-                        "Gravity",
-                        "Github"
-                    ]
-                },
-                {
-                    "imgSrc": "",
-                    "link": "https://github.com/michaeldfallen/git-radar/pulls?q=is%3Apr+is%3Amerged+author%3Ahallzy+",
-                    "boldTitle": "Git Radar",
-                    "normalTitle": "",
-                    "timePeriod": "Oct 2015 - Jan 2016",
-                    "description": [
-                        "Follow the link to see all of my merged pull requests.",
-                        "This project gives you a \"heads up display\" for Git in your bash prompt. In other words, it gives you a summary of the state of your repository in your Bash prompt.",
-                        "I added a configuration variable to customize the time between automatic \"git fetch\" commands.",
-                        "Fixed a \"git stash\" error in the script.",
-                        "I was active in the reported issues, offering suggestions and solutions to other users and contributors."
-                    ],
-                    "skills": [
-                        "Bash Script",
-                        "Github"
-                    ]
-                }
-            ]
-        },
-        "interests": {
-            "title": "Interests & Activities",
-            "entries": [
-                {
-                    "imgSrc": "",
-                    "boldTitle": "",
-                    "normalTitle": "",
-                    "timePeriod": "",
-                    "description": [
-                        "Learning and trying new things",
-                        "Skiing, snowboarding",
-                        "Baseball, hockey, lacrosse",
-                        "Walking, running, hiking",
-                        "Travelling"
                     ],
                     "skills": [
                     ]

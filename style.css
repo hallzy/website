@@ -45,7 +45,8 @@ a:after {
     display: inline-block;
 }
 
-.contact a:after {
+.sidebar a:after,
+.description a:after {
     content: "";
     width: 1em;
     height: 1em;
@@ -61,7 +62,8 @@ a:hover {
     text-decoration: underline;
 }
 
-.img-container {
+.img-container,
+.sidebar a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -129,7 +131,7 @@ img {
         ;
     }
 
-    .contact .img-container {
+    .sidebar a {
         justify-content: center;
     }
 
@@ -163,6 +165,11 @@ img {
 
 .section.work {
     grid-area: work-section;
+}
+
+.section.work .summary {
+    margin: 0.5em 0;
+    padding-left: 2ch;
 }
 
 .section.projects {
@@ -239,6 +246,10 @@ img {
         background-color: white;
     }
 
+    .print-d-none {
+        display: none;
+    }
+
     .m-t-1
     {
         margin-top: 1em;
@@ -296,9 +307,9 @@ img {
 
     /* This is a hack to get the page to break sanely. Chrome is stupid, and */
     /* without this it will break right in the middle of a line of text. */
-    /* li.projects-0-1 { */
-    /*     margin-top: 41px; */
-    /* } */
+    .sidebar .skills {
+        margin-top: 108px;
+    }
 
     a {
         font-weight: lighter;
@@ -311,13 +322,13 @@ img {
         margin-top: 1cm;
         margin-bottom: 1cm;
 
-        @bottom-center {
-            content: "Steven Hall's Resume";
-        }
+        /* @bottom-center { */
+        /*     content: "Steven Hall's Resume"; */
+        /* } */
 
-        @bottom-right {
-            content: counter(page);
-        }
+        /* @bottom-right { */
+        /*     content: counter(page); */
+        /* } */
     }
 
     @page:first {
