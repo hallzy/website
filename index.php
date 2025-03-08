@@ -84,15 +84,7 @@ function lists2html($className, array $arr) : string {
                     </ul>
                 </div>
                 <div>
-                    <div class='title'>My Projects</div>
-                    <ul>
-                    <?php foreach($data->projects as $project): ?>
-                        <li><?= $project ?></li>
-                    <?php endforeach; ?>
-                    </ul>
-                </div>
-                <div>
-                    <div class='title'>Open Source</div>
+                    <div class='title open-source'>Open Source</div>
                     <ul>
                     <?php foreach($data->openSource as $openSource): ?>
                         <li><?= $openSource ?></li>
@@ -137,14 +129,16 @@ function lists2html($className, array $arr) : string {
                         <div class='summary'><?= $entry->summary ?></div>
                     <?php endif; ?>
 
+                    <?php if (($entry->description) || $entry->skills): ?>
                         <ul>
+                        <?php if ($entry->description): ?>
                             <?= lists2html("$className-$idx", $entry->description) ?>
-
+                        <?php endif; ?>
                         <?php if ($entry->skills): ?>
                             <li><strong>Skills:</strong> <?= implode(', ', $entry->skills) ?></li>
                         <?php endif; ?>
-
                         </ul>
+                    <?php endif; ?>
                     </div>
                 </div>
             <?php endforeach; ?>

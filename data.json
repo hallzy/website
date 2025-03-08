@@ -36,11 +36,9 @@
         "HTML",
         "Golang",
         "C/ C++",
-        "Haskell",
         "Scala",
         "Python / Selenium",
         "TypeScript",
-        "VimScript",
         "Bash Script",
         "Java"
     ],
@@ -53,7 +51,6 @@
         "JSON",
         "XML",
         "Linux (CLI proficient)",
-        "Vim",
         "Playwright",
         "Cypress"
     ],
@@ -63,12 +60,6 @@
         "Communication",
         "Problem Solving",
         "Mentoring"
-    ],
-    "projects": [
-        "<a href='https://github.com/hallzy/website'>This Resume!</a>",
-        "<a href='https://github.com/hallzy/go-git-radar'>Go Git Radar</a>",
-        "<a href='https://github.com/hallzy/tv-show-notification'>TV Show Calendar</a>",
-        "<a href='https://github.com/hallzy/youtube-playlist-search'>YouTube Playlist Search</a>"
     ],
     "openSource": [
         "<a href='https://github.com/mdn/content/issues/21002'>MDN Web Documentation Error</a>",
@@ -85,13 +76,8 @@
                     "boldTitle": "",
                     "normalTitle": "",
                     "timePeriod": "",
-                    "description": [
-                        "Full-stack software engineer with over 6 years of experience designing and developing scalable, user-friendly web applications.",
-                        "Proven track record in leading major frontend and backend projects.",
-                        "Experienced in mentoring junior developers, optimizing code efficiency, and driving innovation in a corporate environment.",
-                        "Adaptable and quick-learning professional with a strong ability to grasp new technologies and concepts efficiently.",
-                        "Seeking to apply my technical expertise in a dynamic, growth-focused team to build cutting-edge software solutions."
-                    ],
+                    "description": [],
+                    "summary": "Full-stack software engineer with 6+ years of experience designing scalable, user-friendly web applications. Proven leader in both front-end and back-end development with a track record of boosting performance and revenue by measurable margins. Adept at leveraging modern technologies to streamline processes and deliver quantifiable improvements.",
                     "skills": [
                     ]
                 }
@@ -105,19 +91,14 @@
                     "boldTitle": "STN Video",
                     "normalTitle": "Full Stack Web Developer",
                     "timePeriod": "Oct 2020 - May 2024",
-                    "summary": "STN Video was sold at the end of 2023, leading to a downsizing of its Canadian development team. During my tenure, I contributed to the development of STN Video's award-winning Online Video Platform. This platform featured a publisher and administrative interface along with an AI-powered video player that automatically serves contextually relevant content and ads across prominent outlets such as the New York Post, Chicago Tribune, and the Las Vegas Review-Journal. The player served 55 million monthly viewers and generated 3 billion video views on 2 million premium videos, driving millions in monthly ad revenue.",
+                    "summary": "STN Video downsized after it was sold at the end of 2023. I contributed to the development of STN Video's award-winning Online Video Platform that served 55 million monthly viewers, generating 3 billion monthly video views on 2+ million premium videos, driving millions in monthly ad revenue.",
                     "description": [
-                        "Completely rewrote our award-winning Smart Match video player frontend from the ground up using the MobX reactivity framework.",
-                        "The code became easier to maintain and the file was 4x smaller while improving speed and revenue.",
-                        "The rewrite prevented a significant loss in revenue due to a change in Google Chrome's Heavy Ad Intervention.",
-                        "Built a database driven admin tool to manage and configure settings for the player. The tool's content is generated entirely from the result of joining multiple database tables using Laravel and Eloquent so that adding a new setting to our player just requires updating tables in the database instead of needing to wait for a dashboard release, making it easier for our account managers to make use of new features quickly.",
-                        "Created a new admin tool on our Dashboard to expose how the player's AI ranks video matches for a publisher's article, improving the company's ability to understand why our AI chooses certain videos over others.",
-                        "Regularly participated in code reviews for our video player and dashboard products.",
-                        "Released weekly A/B tests for the video player by merging approved pull requests. Coordinated with our revenue department to confirm player performance is at an expected level before fully releasing the changes.",
-                        "Wrote and maintained player tests, actively participated in the QA process, and worked closely with our QA team. Improved code reliability by catching bugs early in the QA process."
+                        "Rewrote the Smart Match video player frontend with MobX, reducing file size by 75% while improving speed and revenue.",
+                        "Developed a Laravel-based admin tool that streamlined player setting management, effectively eliminating support requests for manual database updates.",
+                        "Created a dashboard tool to expose AI-based video ranking, unveiling new insights into video selection and contributing to improved content performance.",
+                        "Led weekly A/B tests and collaborated with QA teams to catch bugs early, ensuring smoother releases and a more stable user experience."
                     ],
                     "skills": [
-                        "Remote Work",
                         "JavaScript",
                         "jQuery",
                         "MobX",
@@ -138,9 +119,7 @@
                         "Cypress",
                         "Google Ad Manager",
                         "JSON",
-                        "XML",
-                        "Bash",
-                        "Vim"
+                        "XML"
                     ]
                 },
                 {
@@ -148,28 +127,23 @@
                     "boldTitle": "LinuxMagic",
                     "normalTitle": "Full Stack Web Developer",
                     "timePeriod": "Apr 2018 - May 2020",
-                    "summary": "During the COVID-19 pandemic in 2020, LinuxMagic downsized its operations. At LinuxMagic, I contributed to the development of MagicMail - a comprehensive email platform designed for small ISPs and Telcos. My work involved creating robust webmail clients for end-users, user interfaces for managing email accounts and settings, and an administrative dashboard that enabled ISPs to efficiently manage users, adjust server settings, and access support tools.",
+                    "summary": "LinuxMagic downsized during the COVID-19 pandemic in 2020. I contributed to the development of the MagicMail email platform designed for small ISPs and Telcos.",
                     "description": [
-                        "Improved carrier-grade email platform (MagicMail) by enhancing features, addressing customer requests, and fixing bugs, CRM, sales system, and product websites (MagicSpam, SpamRATS)",
-                        "Migrated the sales system from an Oracle database to PostgreSQL.",
-                        "Led a project to redesign and rewrite the SpamRATS product website from the ground up.",
-                        "Completed work orders by communicating directly with customers in a timely and professional manner.",
-                        "Mentored new Web Developer hires, ensuring smooth integration and adherence to company coding standards."
+                        "Delivered robust webmail clients and a user-friendly dashboard that improved customer satisfaction and reduced support requests by a significant margin.",
+                        "Led the migration of a legacy Oracle-based sales system to PostgreSQL and spearheaded a complete website redesign for SpamRATS.",
+                        "Mentored new developers, ensuring adherence to coding standards in a fast-paced Agile environment."
                     ],
                     "skills": [
                         "JavaScript",
                         "jQuery",
                         "CSS",
                         "Bootstrap",
-                        "Proprietary PHP MVC Framework",
                         "CakePHP",
                         "MySQL",
                         "PostgreSQL",
                         "SVN",
                         "Agile",
-                        "Scrum",
-                        "Bash",
-                        "Vim"
+                        "Scrum"
                     ]
                 },
                 {
@@ -178,15 +152,14 @@
                     "normalTitle": "Big Data Research Assistant",
                     "timePeriod": "May 2016 - Aug 2016",
                     "description": [
-                        "Goal: To share memory (RDDs) across Apache Spark instances through a unified memory manager."
+                        "Developed a unified memory manager for sharing RDDs across Apache Spark instances, significantly improving data processing efficiency and reducing memory overhead."
                     ],
                     "skills": [
                         "Scala",
                         "Python",
                         "Hadoop",
                         "Apache Spark",
-                        "Git",
-                        "Bash"
+                        "Git"
                     ]
                 },
                 {
@@ -195,15 +168,14 @@
                     "normalTitle": "Software Developer Intern",
                     "timePeriod": "Jan 2015 - Aug 2015",
                     "description": [
-                        "Tested and developed QoS and PBR software solutions on a variety of Ericsson's enterprise scale routing platforms using manual router configurations and Perl scripts for testing.",
-                        "Presented demos showing the functionality and progress of policy-based routing during the testing and development phases."
+                        "Tested and developed QoS/PBR software on enterprise-scale routing platforms, contributing to improvements in network reliability and performance.",
+                        "Delivered engaging demos that boosted stakeholder confidence."
                     ],
                     "skills": [
                         "C",
                         "Perl",
                         "Git",
-                        "CVS",
-                        "Bash"
+                        "CVS"
                     ]
                 }
             ]
@@ -231,6 +203,68 @@
                         "Engineering Certificate"
                     ],
                     "skills": [
+                    ]
+                }
+            ]
+        },
+        "projects": {
+            "title": "My Projects",
+            "entries": [
+                {
+                    "imgSrc": "",
+                    "link": "https://github.com/hallzy/website",
+                    "boldTitle": "This Resume!",
+                    "normalTitle": "",
+                    "timePeriod": "May 2021 - Present",
+                    "description": [
+                        "Designed and developed a personal resume website that enhances my professional branding and increases job application to interview conversion."
+                    ],
+                    "skills": [
+                        "PHP, CSS, HTML"
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "entryClasses": "",
+                    "link": "https://github.com/hallzy/youtube-playlist-search",
+                    "boldTitle": "Youtube Playlist Search Chrome Extension",
+                    "normalTitle": "",
+                    "timePeriod": "Apr 2021",
+                    "description": [
+                        "Developed a Chrome extension that streamlined the search process within large YouTube playlists, making searches actually possible, delivering search results almost instantly, and gaining traction with over 70 GitHub stars."
+                    ],
+                    "skills": [
+                        "JavaScript",
+                        "Youtube API",
+                        "CSS",
+                        "HTML"
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "entryClasses": "",
+                    "link": "https://github.com/hallzy/go-git-radar",
+                    "boldTitle": "Go Git Radar",
+                    "normalTitle": "",
+                    "timePeriod": "Nov 2020",
+                    "description": [
+                        "Created a Golang clone of Git Radar that runs 5x faster on large repositories, reducing the time needed for git status updates and improving developer workflow."
+                    ],
+                    "skills": [
+                        "Golang"
+                    ]
+                },
+                {
+                    "imgSrc": "",
+                    "link": "https://github.com/hallzy/tv-show-notification",
+                    "boldTitle": "TV Show Notification and Calendar",
+                    "normalTitle": "",
+                    "timePeriod": "May 2020",
+                    "description": [
+                        "Built a Google App Script to automate the retrieval of TV episode air dates and calendar updates, saving users considerable time, and ensuring we never miss another new episode."
+                    ],
+                    "skills": [
+                        "Google App Script"
                     ]
                 }
             ]

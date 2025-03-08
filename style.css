@@ -3,6 +3,7 @@
 * {
     /* Without this, "ft" gets converted to a ligature */
     font-variant-ligatures: none;
+    font-feature-settings: "liga" 0;
 }
 
 :root {
@@ -20,19 +21,6 @@ body {
     width: 8.5in;
 }
 
-/* resume border = 3em = 40px */
-@media (max-width: calc(8.5in + (2 * 40px) - 1px)) {
-    body {
-        margin: 0px;
-        width: auto;
-    }
-}
-
-a {
-    font-weight: normal;
-    text-decoration: none;
-}
-
 a:after {
     content: "";
     width: 1em;
@@ -43,6 +31,10 @@ a:after {
     left: -6px;
     position: relative;
     display: inline-block;
+}
+
+.sidebar > div {
+    margin-bottom: 1.5em;
 }
 
 .sidebar a:after,
@@ -102,46 +94,13 @@ img {
     grid-template-areas:
         'sidebar            summary-section'
         'sidebar            work-section'
-        'education-section  education-section'
         'projects-section   projects-section'
-        'interests-section  interests-section'
+        'education-section  education-section'
     ;
     grid-gap: 0ch 4ch;
     grid-auto-columns: 1fr 4fr;
+    grid-auto-rows: 0fr 1fr 0fr;
     padding: 0px 5ch;
-}
-
-/* Extra Small Screens */
-@media (max-width: 370px) {
-    .lastName {
-        display: block;
-    }
-}
-
-/* Small Screens */
-@media (max-width: 550px) {
-    .content {
-        grid-template-areas:
-            'sidebar'
-            'summary-section'
-            'work-section'
-            'education-section'
-            'projects-section'
-            'interests-section'
-        ;
-    }
-
-    .sidebar a {
-        justify-content: center;
-    }
-
-    .sidebar {
-        text-align: center;
-    }
-
-    .section .heading {
-        text-align: center;
-    }
 }
 
 .sidebar {
@@ -168,7 +127,7 @@ img {
 }
 
 .section.work .summary {
-    margin: 0.5em 0;
+    margin-bottom: 0.5em;
     padding-left: 2ch;
 }
 
@@ -178,10 +137,6 @@ img {
 
 .section.education {
     grid-area: education-section;
-}
-
-.section.interests {
-    grid-area: interests-section;
 }
 
 .section .heading {
@@ -212,6 +167,11 @@ img {
         'description  description  description';
     margin-bottom: 1.5em;
 }
+
+.section .entry:has(span) {
+    grid-gap: 0.5em 0;
+}
+
 .section .title {
     grid-area: title;
     font-size: 1.1em;
@@ -307,8 +267,11 @@ img {
 
     /* This is a hack to get the page to break sanely. Chrome is stupid, and */
     /* without this it will break right in the middle of a line of text. */
-    .sidebar .skills {
-        margin-top: 108px;
+    .sidebar .open-source {
+        margin-top: 33px;
+    }
+    .section.work .entry:last-child {
+        margin-top: 34px;
     }
 
     a {
@@ -333,5 +296,112 @@ img {
 
     @page:first {
         margin-top: 0px;
+    }
+}
+
+/* resume border = 3em = 40px */
+@media (max-width: calc(8.5in + (2 * 40px) - 1px)) {
+    body {
+        margin: 0px;
+        width: auto;
+    }
+
+    ul {
+        padding-left: 16px;
+    }
+
+    .sidebar ul {
+        padding-left: 0
+    }
+}
+
+a {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* Medium Screens */
+@media (max-width: 720px) {
+    .section .entry {
+        grid-template-areas:
+            'title'
+            'timePeriod'
+            'description';
+    }
+
+    .section .timePeriod {
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+
+    .section .entry:has(span) {
+        grid-gap: 0;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 600px) {
+    .content {
+        grid-template-areas:
+            'sidebar'
+            'summary-section'
+            'work-section'
+            'projects-section'
+            'education-section'
+        ;
+        padding: 0px 3ch;
+    }
+
+    .section .entry {
+        grid-template-areas:
+            'title'
+            'timePeriod'
+            'description';
+    }
+
+    .section .timePeriod {
+        text-align: center;
+    }
+
+    .img-container {
+        flex-direction: column;
+    }
+
+    .sidebar a {
+        justify-content: center;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .section .heading {
+        text-align: center;
+    }
+
+    .section.work .summary {
+        padding-left: 0;
+    }
+
+    body {
+        margin: 0px;
+        width: auto;
+    }
+
+    ul {
+        padding-left: 16px;
+    }
+
+    .sidebar ul {
+        padding-left: 0
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 370px) {
+    .header .lastName {
+        display: block;
+        margin-top: -15px;
+        font-weight: unset;
     }
 }
