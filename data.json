@@ -27,6 +27,8 @@
         }
     ],
     "languages": [
+        "React",
+        "TypeScript",
         "JavaScript / jQuery",
         "Node.js",
         "CSS / SASS / Bootstrap",
@@ -87,6 +89,31 @@
             "title": "Work Experience",
             "entries": [
                 {
+                    "imgSrc": "imgs/bitkernel.jpg",
+                    "boldTitle": "BitKernel",
+                    "normalTitle": "Frontend Web Developer",
+                    "timePeriod": "Mar 2025 - Present",
+                    "summary": "Building a dynamic OTT web platform with a server‑driven UI (SDUI) that adapts in real time based on backend configurations.",
+                    "description": [
+                        "Core contributor on a 2‑person team bootstrapping a React‑based OTT web platform with a server‑driven UI, enabling content and layout tweaks without code redeploys.",
+                        "Implemented a JSON‑schema‑driven rendering engine and a reusable component library in TypeScript for fully dynamic UI generation.",
+                        "Built responsive, accessible UI components using CSS modules.",
+                        "Managed source and release workflows in Git and Jira and participated in Agile/Scrum processes."
+                    ],
+                    "skills": [
+                        "React",
+                        "Vite",
+                        "Webpack",
+                        "TypeScript",
+                        "Agile",
+                        "Scrum",
+                        "Git",
+                        "Jira",
+                        "CSS",
+                        "JSON"
+                    ]
+                },
+                {
                     "imgSrc": "imgs/stnvideo.png",
                     "boldTitle": "STN Video",
                     "normalTitle": "Full Stack Web Developer",
@@ -99,6 +126,7 @@
                         "Led weekly A/B tests and collaborated with QA teams to catch bugs early, ensuring smoother releases and a more stable user experience."
                     ],
                     "skills": [
+                        "React",
                         "JavaScript",
                         "jQuery",
                         "MobX",
