@@ -350,6 +350,7 @@ a {
             'education-section'
         ;
         padding: 0px 3ch;
+        grid-auto-rows: 0fr 0fr 0fr;
     }
 
     .section .entry {
