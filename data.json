@@ -89,16 +89,25 @@
             "title": "Work Experience",
             "entries": [
                 {
+                    "imgSrc": "imgs/tuhk.jpg",
+                    "boldTitle": "Tuhk",
+                    "normalTitle": "Backend Developer",
+                    "timePeriod": "Nov 2025 - Present",
+                    "summary": "Building backend systems for intelligent fraud prevention and secure payment processing.",
+                    "description": [
+                    ],
+                    "skills": [
+                    ]
+                },
+                {
                     "imgSrc": "imgs/bitkernel.png",
                     "boldTitle": "BitKernel",
                     "normalTitle": "Frontend Web Developer",
-                    "timePeriod": "Mar 2025 - Present",
-                    "summary": "Building a dynamic OTT web platform with a server‑driven UI (SDUI) that adapts in real time based on backend configurations.",
+                    "timePeriod": "Mar 2025 - Oct 2025",
+                    "summary": "Building a dynamic OTT web platform with a real-time server‑driven UI.",
                     "description": [
-                        "Core contributor on a 2‑person team bootstrapping a React‑based OTT web platform with a server‑driven UI, enabling content and layout tweaks without code redeploys.",
-                        "Implemented a JSON‑schema‑driven rendering engine and a reusable component library in TypeScript for fully dynamic UI generation.",
-                        "Built responsive, accessible UI components using CSS modules.",
-                        "Managed source and release workflows in Git and Jira and participated in Agile/Scrum processes."
+                        "Built a server-driven UI OTT web platform, enabling content and layout tweaks without code redeploys.",
+                        "Implemented a JSON‑schema‑driven rendering engine and a reusable component library in TypeScript for fully dynamic UI generation."
                     ],
                     "skills": [
                         "React",
